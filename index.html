@@ -1,47 +1,41 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CIT 230 Assignment Portal - Stewart Jensen</title>
-    <meta name="author" content="Stewart Jensen" />
-    <meta
-      name="description"
-      content="Assignment Portal for Stewart Jensen in CIT 230: Web Frontend Development at Brigham Young University - Idaho"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/small.css">
-    <link rel="stylesheet" type="text/css" href="css/medium.css">
-  </head>
-  <body>
-    <header>
-      <h1>Stewart Jensen</h1>
-      <img class="rightalign"
-        src="https://scontent.fboi1-1.fna.fbcdn.net/v/t1.0-9/s960x960/57072562_2001096780003029_2275129423202091008_o.jpg?_nc_cat=106&_nc_ohc=rJM-lFnbVeoAX_47INQ&_nc_ht=scontent.fboi1-1.fna&_nc_tp=1002&oh=5d19d4b9b4ba0d82a017472fbf7f7bdc&oe=5EA67D9D"
-        alt="Me"
-      />
-    </header>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT 230 - Web Frontend Development - Stewart Jensen</title>
+        <meta name="description" content="This page is Stewart Jensen's assignment portal home page for CIT 230 - Web Frontend Development at BYU-Idaho">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    </head>
+    
+    <body>
+        
+        <header>
+            <img class="rightalign" src="https://scontent.fboi1-1.fna.fbcdn.net/v/t1.0-9/s960x960/57072562_2001096780003029_2275129423202091008_o.jpg?_nc_cat=106&_nc_ohc=rJM-lFnbVeoAX_47INQ&_nc_ht=scontent.fboi1-1.fna&_nc_tp=1002&oh=5d19d4b9b4ba0d82a017472fbf7f7bdc&oe=5EA67D9D" alt="me">
+            <h1>Stewart Jensen</h1>
+        </header>
 
-    <main>
-      <h2>CIT 230: Assignment Portal</h2>
-      <hr />
-      <ul>
-        <li>Lesson 02: <a href="#"> Assignment Link</a></li>
-        <li>Lesson 03: <a href="#"> Assignment Link</a></li>
-        <li>Lesson 04: <a href="#"> Link</a> | <a href="Link"> Link</a></li>
-      </ul>
-    </main>
-    <footer>
-      <span>&copy; </span><span id="currentyear"></span>
-      <span
-        >| Stewart Jensen | Idaho |
-        <a href="https://www.byui.edu/online" id="byui"
-          >BYUI Online Learning
-        </a></span
-      >
-      <p id="lastmod"></p>
-    </footer>
+        <main>
+            <h2>CIT 230: Assignment Portal</h2>
+            <ul>
+                <li>Lesson 02: <a href="#">Assignment Link</a></li>
+                <li>Lesson 03: <a href="#">Assignment Link</a></li>
+                <li>Lesson 04: <a href="#">Link</a> | <a href="#">Link</a></li>
+            </ul>
+        </main>
 
-    <script src="js/cit230portal.js"></script>
-  </body>
+        <footer>
+            <p>
+                &copy; <span id="currentyear"></span> | Stewart Jensen | Idaho | 
+                <a href="https://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning">BYUI Online Learning</a>
+            </p>
+            <p>
+                Last Updated: <span id="lastUpdateTime"></span>
+            </p>
+        </footer>
+
+        <script src="js/home.js"></script>
+    </body>
 </html>
