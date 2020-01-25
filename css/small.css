@@ -97,7 +97,8 @@ nav ul {
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	background-color: #008080;
+    background-color: rgb(2, 0, 139);
+    color: #fff;
 	text-align: center;
 	font-family: 'Montserrat', serif;
 	
