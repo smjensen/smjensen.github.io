@@ -124,7 +124,7 @@ main {
     display:flex;
     flex-direction: column-reverse;
     border:1px solid rgb(61, 1, 1);
-    background-color: rgba(150, 171, 231, 0.3);
+    background-color: rgba(0, 151, 38, 0.3);
     padding:.75rem;
     max-width:1020px;
     margin:0 auto;
@@ -148,7 +148,7 @@ article p {
     margin: 0 auto;
 }
  p.author {
-     color:rgb(0, 19, 82);
+     color:rgb(1, 66, 23);
      font-size: .75rem;
      text-align:left;
      margin-left:.75rem;
@@ -169,7 +169,7 @@ article p {
     margin-bottom: -1rem;
     text-align:left;
     border:1px solid rgb(2, 2, 5);
-    background-color: rgba(122,143,204,0.3);
+    background-color: rgba(0, 80, 24, 0.3);
 
 }
 /*.contactinfo {
@@ -198,7 +198,7 @@ article p {
    /* background-color:#7A8FCC;
     /*background:radial-gradient(#7A8FCC,#263D80);*/
     /*background:radial-gradient(#7A8FCC,#596895);*/
-    background-color:#002594;
+    background-color:#005323;
     padding:.5rem;
     display: inline-block;
     border: 1px solid rgb(70, 0, 0);
@@ -225,7 +225,7 @@ article p {
 }
 
 header, footer {
-    background-color: rgb(0, 17, 70);
+    background-color: rgb(0, 70, 18);
     margin: 1rem auto;
     
 }
@@ -241,11 +241,11 @@ footer a {
     color: white;
 }
 footer a:hover {
-    background-color: #7A8FCC;
+    background-color: rgb(122, 204, 129);
 }
 h1 {
     color:white;
-    background-color:rgb(79, 110, 206);
+    background-color:rgb(79, 206, 117);
     font-family: 'Merriweather', serif;
 }
 h2, h3, h4 {
@@ -254,7 +254,7 @@ h2, h3, h4 {
     text-align:center;
 }
 h2 {color:#263D80;}
-h3  {background-color:#7A8FCC;
+h3  {background-color:rgb(122, 204, 136);
     color:#17244D;}
 h4 {color:#263D80;}
 .heroimage {
@@ -262,7 +262,7 @@ h4 {color:#263D80;}
     max-height:100%;
    
     
-    border: 1px solid #263D80;
+    border: 1px solid rgb(38, 128, 58);
     
 }
 
