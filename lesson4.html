@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Preston weather page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Preston weather page">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&7cMerriweather+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <img class="logo" src="images/iconmed.jpg" alt="weatherornot logo">
+        <section class="headings">
+            <h1> Weather or Not</h1>
+            <div class="motto"><p>headings</p></div>
+        </section>
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="topNav" class="hide">
+                <li class="menu"><a href="#">Menu</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">town1</a></li>
+                <li><a href="#">town2</a></li>
+                <li><a href="#">town3</a></li>
+                <li><a href="#">Gallery</a></li>
+                </ul>
+            
+        </nav>
+    
+    
+        <main>
+            <h2 class="city">town 1</h2>
+            <div class="contentbox hero">
+                <img src="images/boater1.jpg" alt="hero image of man in boat on water" class="heroimage">
+               <div class="summary"><h3>Weather Summary</h3>
+           <p>32 <br> Sunny</p></div></div>
+            <div class="contentbox forecast clearfix">
+                
+                <h4>5 Day Forecast</h4>
+                <br>
+
+            <p> This will contain the details for the five day forecast.
+            M T W Th F Sa Su etc</p></div>
+            <div class="contentbox">
+                <article>
+                    
+                <img src="images/lightening1.jpg" alt="article image of lightening striking" class="articleimage">
+                <div>
+                    <h4>Article Title</h4>
+                <p class="author">by Author</p>
+                <p>This is where an interesting article about something from the current city will be displayed. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                </article>
+            </div>
+           
+            <div class="contentbox contactinfo">
+                
+                
+                <p class="contact1"> 
+                    Contact Information placed here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                   <p class="contact2"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam,
+                       </p>
+                <img src="images/map1a.jpg" class="map" alt="random location map">
+
+            </div>
+    </main>
+    <footer>
+        &copy;Weather | <a href="../index.html">Stewart Jensen</a> <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
