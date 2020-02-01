@@ -126,7 +126,7 @@ main {
     border:1px solid rgb(61, 1, 1);
     background-color: rgba(0, 151, 38, 0.3);
     padding:.75rem;
-    max-width:1020px;
+    max-width:500px;
     margin:0 auto;
 }
  article h4 {
