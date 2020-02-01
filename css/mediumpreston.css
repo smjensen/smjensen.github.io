@@ -1,0 +1,155 @@
+@media only screen and (min-width:32.5em) {
+    nav { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,263d80+0,596895+100 */
+ /*background: #1e5799; /* Old browsers */
+ /*background: -moz-linear-gradient(top,  #1e5799 0%, #263d80 0%, #596895 100%); /* FF3.6-15 */
+ /*background: -webkit-linear-gradient(top,  #1e5799 0%,#263d80 0%,#596895 100%); /* Chrome10-25,Safari5.1-6 */
+ /*background: linear-gradient(to bottom,  #1e5799 0%,#263d80 0%,#596895 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#596895',GradientType=0 ); /* IE6-9 */
+ 
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,263d80+0,7a8fcc+100 */
+ /*background: #1e5799; /* Old browsers */
+ /*background: -moz-linear-gradient(top,  #1e5799 0%, #263d80 0%, #7a8fcc 100%); /* FF3.6-15 */
+ /*background: -webkit-linear-gradient(top,  #1e5799 0%,#263d80 0%,#7a8fcc 100%); /* Chrome10-25,Safari5.1-6 */
+ /*background: linear-gradient(to bottom,  #1e5799 0%,#263d80 0%,#7a8fcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7a8fcc',GradientType=0 ); /* IE6-9 */
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7a8fcc+1,263d80+100 */
+ background: #1e5799; /* Old browsers */
+ background: -moz-linear-gradient(top,  #1e5799 0%, #7a8fcc 1%, #263d80 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  #1e5799 0%,#7a8fcc 1%,#263d80 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  #1e5799 0%,#7a8fcc 1%,#263d80 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#263d80',GradientType=0 ); /* IE6-9 */
+ 
+ }
+ 
+ 
+    /* .headings h1 {
+         font-size: 2rem;
+ 
+     }*/
+     .motto p {
+         margin-top:-1rem;
+     }
+     .forecast {
+         display: flex;
+         flex-direction: column;
+         max-height: 100px;
+         align-items: center;
+         justify-content: center;
+         max-width: 1020px;
+         background-color: rgba(122,143,204,0.3);
+         align-content:center;
+         padding: 1rem 7rem;
+         /*padding-bottom:1rem;*/
+         border:1px solid #17244D;
+         margin:0 auto;
+         margin-bottom:1rem;
+                 
+     }
+     .forecast p {
+         background-color: white;
+         border: 1px solid  #17244D;
+         margin-top: -1.5rem;
+         font-size:1.5rem;
+         padding:.5rem;
+         display: inline;
+         
+         
+         
+ 
+     }
+     
+     body {
+         line-height:1.25rem;
+     }
+     /*article {
+         flex-direction:row-reverse;
+ 
+     }
+     .articleimage {
+         float:right;
+         margin-left: 8px;
+         margin-right: 1rem;
+         margin-top: 2rem;
+         max-width:414px;
+         max-height:216px;
+         
+         
+     }
+     article h4 {
+         margin-left: 1rem;
+     }
+     p.author{ 
+         margin-left: 1rem;
+ 
+     }
+     article p {
+         text-align:left;
+         margin-left: 1rem;
+     }*/
+     article {
+         display:grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-column-gap:1rem;
+         padding:0 1.5rem;
+ 
+     }
+     .articleimage {
+         grid-column:3;
+         grid-row:1/3;
+         align-self: center;
+     }
+     article div {
+         grid-column: 1/3;
+         grid-row: 1/3;
+         align-self:center;
+ 
+     }
+     p.author {
+ 
+     }
+     article h4 {
+         margin-bottom:0;
+     }
+     article p {
+         text-align:left;
+         margin-top: -.25rem;
+     }
+     .contactinfo  {
+         grid-template-rows: 75px 125px;
+         grid-row-gap: 0;
+         grid-column-gap: 1rem;
+        /* margin-left:.25rem;
+         margin-right:.25rem;*/
+         margin:0;
+         margin-bottom: -1rem;
+     }
+     .contact1  {
+         grid-column: 2;
+         grid-row: 1;
+         align-self: start;
+         justify-self:start;
+     }
+     .contact2 {
+         grid-column: 2;
+         grid-row: 2;
+        /* align-self: start;
+         justify-self:center;*/
+        
+         
+ 
+     }
+    
+     /*.contactinfo p {
+         grid-column:2;
+         grid-row:2/4;
+         display:inline;
+     }*/
+    .contactinfo img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        /*align-self: center;
+        justify-self:baseline;*/
+       
+ 
+    }
+ }
