@@ -171,7 +171,7 @@ article p {
     margin: 0 auto;
 }
  p.author {
-     color:#0a530e;
+     color:white;
      font-size: .75rem;
      text-align:left;
      margin-left:.75rem;
@@ -338,7 +338,7 @@ h2, h3, h4 {
     font-family: 'Merriweather', serif;
     text-align:center;
 }
-h2 {color:#0a530e;}
+h2 {color:white;}
 h3  {background-color:#0a530e;
     color:#17244D;}
 h4 {color:#0a530e;}
