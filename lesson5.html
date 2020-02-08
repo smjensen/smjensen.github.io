@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Preston weather page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Preston weather page">
+        <link rel="stylesheet" href="css/normalizepreston.css">
+        <link rel="stylesheet" href="css/smallpreston.css" >
+        <link rel="stylesheet" href="css/mediumpreston.css">
+        <link rel="stylesheet" href="css/largepreston.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&7cMerriweather+Sans&display=swap" width="500px" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <img class="logo" src="https://s7d2.scene7.com/is/image/TWCNews/0801_n13_chuluotaweatherjpg?wid=2000&hei=1125&$wide-bg$" width="500px" alt="clouds over field">
+        <section class="headings">
+            <h1> weather fixins</h1>
+            <div class="motto"><p>we cannot have you having your day ruined.</p></div>
+        </section>
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="topNav" class="hide">
+                <li class="menu"><a href="#">Menu</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+                </ul>
+            
+        </nav>
+    
+    <br>
+    <br>
+    <br>
+        <main>
+            <h2 class="city">Preston</h2>
+            <div class="contentbox hero">
+                <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/smap-weather.jpg" width="1000px" alt="storm field" >
+               <div class="summary"><h3>Weather today</h3>
+           <p>68 <br> Stormy</p></div></div>
+            <div class="contentbox forecast clearfix">
+                
+                <h4>5 Day Forecast</h4>
+
+            <p>  five day forecast.
+            M T W Th F Sa Su</p></div>
+            <div class="contentbox">
+                <article>
+                    
+                <img src="https://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/image_nodes/landscape-3369304_1920.jpg?itok=0ffV9YqR" width="500px" alt="sunny day" >
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Article Title</h4>
+                <p class="author">by Author</p>
+                <p>new paragraph</p>
+                </div>
+                </article>
+            </div>
+           
+            <div class="contentbox contactinfo">
+                
+                
+                <p class="contact1"> 
+                   new line</p>
+                   <p class="contact2"> new paragraph
+                       </p>
+                <img src="https://www.campusfrance.org/sites/default/files/styles/mobile_visuel_principal_page/public/Fotolia_171500112_Subscription_Monthly_M.jpg?itok=-4sCWSJZ" width="250px" class="map" alt="rain">
+
+            </div>
+    </main>
+    <footer>
+        &copy;Weatherfixens | <a href="https://smjensen.github.io/">Stewart Jensen</a> <br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
