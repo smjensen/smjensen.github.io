@@ -95,7 +95,7 @@ nav ul li a {
     display: block;
     text-decoration:none;
     padding: 1rem 2%;
-    color: #17244D;
+    color: #0a530e;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     
     
@@ -113,7 +113,7 @@ body {
     
     
     font-family: 'Merriweather Sans', sans-serif;
-    color: #0a530e;
+    color: white;
     text-align:center;
     
     
