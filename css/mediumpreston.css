@@ -21,7 +21,11 @@
  
  }
  
- 
+ /*#banner {
+    /*font-size:1.25rem;
+    line-height: 1;
+    padding: .75rem 0;
+}*/
     /* .headings h1 {
          font-size: 2rem;
  
@@ -85,7 +89,36 @@
      article p {
          text-align:left;
          margin-left: 1rem;
+
      }*/
+
+     .forecast h4 {
+    
+    }
+    .fiveday {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 1px solid  #17244D;
+    
+    }
+    /* .forecast p {
+        background-color: white;
+        border: 1px solid  #17244D;
+        margin-top: -1.5rem;
+        font-size:1.5rem;
+        padding:.5rem;
+        display: inline;
+        
+    
+    }*/
+       .fiveday div{
+           border:1px solid  #17244D;
+            grid-row:1;
+           
+           
+    
+       }
      article {
          display:grid;
          grid-template-columns: 1fr 1fr 1fr;
