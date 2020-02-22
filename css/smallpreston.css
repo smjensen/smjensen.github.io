@@ -351,7 +351,13 @@ h4 {color:white;}
 
 
 
-
+.heroimage img {
+    width: 100%;
+}
+.contactinfo {
+   /* color: #263D80;*/
+    background-color:#7A8FCC;
+    color:#17244D;
 
 
 
