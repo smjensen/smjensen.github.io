@@ -106,7 +106,7 @@ nav ul li.active a {
     color: white;
 }
 nav ul li a:hover {
-    background-color:#596895;
+    background-color:#0a530e;
     color:white;
 }
 body {
@@ -147,8 +147,8 @@ main {
     text-align:left;
     display:flex;
     flex-direction: column-reverse;
-    border:1px solid #17244D;
-    background-color: rgba(122,143,204,0.3);
+    border:1px solid #0a530e;
+    background-color: #0a530e;
     padding:.75rem;
     max-width:1020px;
     margin:0 auto;
@@ -192,8 +192,8 @@ article p {
     margin:0 -.5rem;
     margin-bottom: -1rem;
     text-align:left;
-    border:1px solid #17244D;
-    background-color: rgba(122,143,204,0.3);
+    border:1px solid #0a530e;
+    background-color: #0a530e;
 
 }
 .contactinfo ul li {
@@ -238,7 +238,7 @@ display: none;
     width:165px;
     height:150px;
    /* background-color:#7A8FCC;*/
-    background:radial-gradient(#0a530e,#263D80);
+    background:radial-gradient(#0a530e,#0a530e);
     
     /*background-color:#596895;*/
    /* background:radial-gradient(#7A8FCC, #596895);
@@ -247,14 +247,14 @@ display: none;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: .25rem;
-    border: 1px solid #17244D;
+    border: 1px solid #0a530e;
     opacity: .9;
     box-shadow:0 0 30px #111;
     
     
 }
 .summary h3 {
-    border:1px solid #17244D;
+    border:1px solid #0a530e;
     padding:.5px 0;
     margin:.25rem .5rem;
     grid-row:1;
@@ -313,7 +313,7 @@ display: none;
 }
 
 header, footer {
-    background-color: #263D80;
+    background-color: #0a530e;
     margin: 1rem auto;
     
 }
@@ -333,7 +333,7 @@ footer a:hover {
 }
 h1 {
     color:white;
-    background-color:#263D80;
+    background-color:#0a530e;
     font-family: 'Merriweather', serif;
 }
 h2, h3, h4 {
