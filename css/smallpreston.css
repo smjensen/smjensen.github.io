@@ -59,7 +59,7 @@ nav ul.hide {
     display: none;
 }
 nav {
-    background-color:#7A8FCC;
+    background-color:#0a530e;
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
     margin:0;
@@ -238,7 +238,7 @@ display: none;
     width:165px;
     height:150px;
    /* background-color:#7A8FCC;*/
-    background:radial-gradient(#7A8FCC,#263D80);
+    background:radial-gradient(#0a530e,#263D80);
     
     /*background-color:#596895;*/
    /* background:radial-gradient(#7A8FCC, #596895);
@@ -329,7 +329,7 @@ footer a {
     color: white;
 }
 footer a:hover {
-    background-color: #7A8FCC;
+    background-color: #0a530e;
 }
 h1 {
     color:white;
@@ -342,7 +342,7 @@ h2, h3, h4 {
     text-align:center;
 }
 h2 {color:#263D80;}
-h3  {background-color:#7A8FCC;
+h3  {background-color:#0a530e;
     color:#17244D;}
 h4 {color:#263D80;}
 .heroimage {
