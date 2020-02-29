@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>CIT 230</title>
+      <meta name="author" content="Stewart Jensen">
+      <meta name="description" content="This is the classic questionnaire page.">
+      <link rel="stylesheet" href="css/normalizepreston.css">
+      <link rel="stylesheet" href="css/smallpreston.css" >
+      <link rel="stylesheet" href="css/mediumpreston.css">
+      <link rel="stylesheet" href="css/largepreston.css"> -
+ <!--     <link href="https://fonts.googleapis.com/css?family=Merriweather&7cMerriweather+Sans&display=swap" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <header>
+
+            <img class="logo" src="https://s7d2.scene7.com/is/image/TWCNews/0801_n13_chuluotaweatherjpg?wid=2000&hei=1125&$wide-bg$" width="500px" alt="clouds over field">
+            <section class="headings">
+                <h1> Weather Fixens</h1>
+                <div class="motto"><p>we cannot have you having your day ruined.</p></div>
+            </section>
+        </header>
+
+        <nav>
+            <ul id="topNav" class="hide">
+                <li class="menu"><a href="#">Menu</a></li>
+                <li><a href="smjensen.github.io/lesson6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="smjensen.github.io/lesson7.html">Gallery</a>
+                </ul>
+        </nav>
+
+        <main>
+            <h2>
+                Storm Center
+            </h2>
+            <form id="stormcenter" action="thanks.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label class="top">Full Name:<input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
+                    <label class="top">Email:<input type="email" name="email" placeholder="example@email.com"></label>
+                    <label class="top">Phone Number:<input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code:<input type="number" name="zipcode" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Storm Date:<input type="date" name="date"></label>
+                    <label class="top">Storm Type:<input list="stormtype" name="type"></label>
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    <label class="top">Storm Severity (Between 1 - 10): <span id="ratingvalue">5</span>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    </label>
+                        <datalist id="tickmarks">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                    <label class="top" for="region">Storm Region:
+                        <select id="region" name="region" form="stormcenter">
+                            <option>Select Region...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                    <div>User In-Danger Level:</div>
+                    <label class="sbs"><input type="radio" name="user_danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="user_danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="user_danger" value="no"> No</label>   
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information or Comments</legend>
+                    <label><textarea name="comment">Enter information or comments here...</textarea></label>
+                </fieldset>
+                
+                <input type="submit" value="Report Storm" class="submitBtn">
+                
+            </form>
+            
+        </main>
+
+        <footer>
+            <p>
+                &copy; <span id="currentyear"></span> | <a href="https://smjensen.github.io/"> Stewart Jensen </a>| Idaho | 
+                <a href="https://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning">BYUI Online Learning</a>
+            </p>
+            <p>
+                Date: <span id="currentDate"></span><br>
+                Last Updated: <span id="lastUpdateTime"></span> <br>
+                
+    
+            </p>
+        </footer>
+        
+        <script src="https://smjensen.github.io/js/home.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Eczar', 'Cormorant']
+                }
+            });
+        </script>
+    </body>
+
+</html>
