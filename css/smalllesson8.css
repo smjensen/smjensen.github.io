@@ -365,10 +365,7 @@ h4 {color:#263D80;}
 .gallery img {
     max-width: 100%;
 }
-/*.gallery picture {
-    margin: 0 .5rem;
-    
-}*/
+
 
 
 .report {
@@ -400,7 +397,6 @@ form label.top, form div {
     font-size: .8rem;
 }
 form div {
-    /*padding-bottom:.25rem;*/
     margin-bottom:-.25rem;
 }
 form label.top input, textarea {
@@ -441,15 +437,13 @@ form label.sbs {
     
 }
 
-::placeholder{/*Chrome, Firefox, Opera, Safari 10.1+*/
+::placeholder{
     color: #0a530e;
 }
-:-ms-input-placeholder {/*IE 10-11*/
+:-ms-input-placeholder {
     color: #0a530e;
 }
-/*::ms-input-placeholder {/*Edge*/
-   /* color: #263D80;
-}*/
+
 
 
 form label.top input:required {
@@ -473,18 +467,7 @@ form label.comments {
     color:   #0a530e;
     margin-bottom: -.5rem;
 }
-/*form label.comments input {
-    width:100%;
-    max-width:19rem;
 
-}*/
-/*textarea#comments {
-    width:100%;
-    max-width:19rem;
-    border-radius:4px;
-    padding:0 .75rem;
-    border: solid 1px #263D80;
-}*/
 
 form input.submitBtn {
     border: 3px solid rgb(83, 250, 133);
@@ -493,11 +476,9 @@ form input.submitBtn {
     color:white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    /*margin: 0 0 2rem 2%;
-    margin:0 0 0 .25rem;*/
+
     width: 100%;
     max-width: 16rem;
-    /*box-sizing: content-box;*/
 
 
 }
@@ -535,13 +516,7 @@ input#rating.slider {
     background: rgb(83, 250, 133);
     cursor: pointer;
 }
-/*form input.slider {
-    
-    margin: 0;
-    border: solid 1px #17244D;
-    width: 100%;
-    max-width: 19rem;
-}*/
+
 
 form input.submitBtn:hover {
     background-color:  rgb(83, 250, 133);
