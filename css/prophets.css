@@ -1,0 +1,49 @@
+h1, h2 {
+    color:#584ca0;
+    text-align:center;
+    font-family: 'Bree Serif', 'Bookman', serif ;
+
+}
+
+section {
+    background-color:#b8b9cd;
+    border:1px solid #514f90;
+    text-align:center;
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:.25rem;
+    box-shadow: 0 0 20px black;
+    padding:1rem;
+    background-color: lightgrey;
+    
+    
+}
+img {
+    width:50%;
+    height:auto;
+    box-shadow: 0 0 15px black;
+    margin-bottom: .5rem;
+   
+
+}
+footer {
+    margin:1rem;
+    text-align:center;
+}
+p {
+    font-family:'Roboto', Verdana, sans-serif;
+    line-height: .5;
+}
+@media only screen and (min-width:760px) {
+    div {
+    
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media only screen and (min-width: 990px) {
+    div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
