@@ -237,3 +237,36 @@
    }
    
  }
+
+  div.townInfo section {
+    display:flex;
+    max-width: 660px;
+    flex-direction: row;
+    justify-content: space-around; 
+    
+
+}
+div.townInfo section:nth-child(even) {
+    flex-direction:row-reverse;
+}
+div.townInfo section div {
+    padding:1.5rem;
+    text-align:center;
+    
+
+}
+div.townInfo h3 {
+    line-height:2rem;
+    
+}
+div.townInfo p {
+  line-height:1;
+  /*padding: 0 3.5rem;*/
+
+} 
+div.townInfo img {
+    max-width:100%;
+    height:auto;
+  }
+
+}
