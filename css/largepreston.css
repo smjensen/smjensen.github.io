@@ -91,6 +91,39 @@
     .photobox:hover {
         box-shadow: 0px 0px 30px #888888;
 
+
+        div.townInfo {
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-gap: 1rem;
+            padding: 1rem;
+            width:980px;
+            box-shadow: 0 5px 10px 5px #263D80;
+        }
+        
+        div.townInfo section {
+            display: grid;
+            grid-template-columns: 1fr;
+            /*width: 300px;*/
+            box-shadow: 5px 10px 5px #263D80;
+            
+        }div.townInfo section div {
+            margin-top:-.5rem;
+        }
+        
+        /*div.townInfo section:nth-child(even) img{
+            float:clear;
+        
+        }
+        div.townInfo section:nth-child(odd) img{
+          float:clear;}*/
+        div.townInfo img {
+            width:100%;
+            padding-bottom: 1rem;
+        }
+        
+            }
+
     }
     /* nav {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,ff3232+0,aa0000+100 */
       /*  background: #1e5799; /* Old browsers */
