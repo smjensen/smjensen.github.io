@@ -376,7 +376,7 @@ div.townInfo {
     grid-gap: .5rem;
     padding: 1rem;
     border: 1px solid #0a530e;
-    box-shadow: 0 5px 10px 10px #263D80;
+    box-shadow: 0 5px 10px 10px white;
     margin-bottom: 1rem;
     /*max-width:1020px;*/
 
@@ -384,7 +384,7 @@ div.townInfo {
 }
 div.townInfo  section{
     background-color: #0a530e;
-    box-shadow: 5px 10px 12px #263D80;
+    box-shadow: 5px 10px 12px white;
     padding:.5rem;
     
     
@@ -396,7 +396,7 @@ div.townInfo section div {
 div.townInfo h3{
     font-size: 2rem;
     background-color: transparent;
-    text-shadow: 1px 2px #7A8FCC;
+    text-shadow: 1px 2px white;
     
     
 }
@@ -409,7 +409,7 @@ div.townInfo p {
     color:#263D80;
 }
 div.townInfo img {
-    box-shadow: 0 0 10px #263D80;
+    box-shadow: 0 0 10px white;
    max-width:100%;
 }
 
