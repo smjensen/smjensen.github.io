@@ -113,7 +113,7 @@ body {
     
     
     font-family: 'Merriweather Sans', sans-serif;
-    color: #081809;
+    color: white;
     text-align:center;
     
     
@@ -172,7 +172,7 @@ article p {
     margin: 0 auto;
 }
  p.author {
-     color:#17244D;
+     color:white;
      font-size: .75rem;
      text-align:left;
      margin-left:.75rem;
@@ -213,19 +213,8 @@ article p {
 .contactinfo ul {
 
 }
-/*.contactinfo {
-    display: flex;
-    flex-wrap: wrap;
-}
-.contactinfo>* {
-    margin:0 10px;
-    flex: 1 1 200px;
-}
-*/
+
 .map {
-   /* grid-column: span 2;
-    max-width:90%;
-    margin:auto;*/
 display: none;
 }
 
@@ -237,12 +226,8 @@ display: none;
     margin:0;
     width:165px;
     height:150px;
-   /* background-color:#7A8FCC;*/
     background:radial-gradient(#0a530e,#0a530e);
     
-    /*background-color:#596895;*/
-   /* background:radial-gradient(#7A8FCC, #596895);
-    font-weight:bold;*/
     padding:.75rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -406,7 +391,7 @@ div.townInfo h4 {
 }
 div.townInfo p {
     line-height: .5;
-    color:#263D80;
+    color:white;
 }
 div.townInfo img {
     box-shadow: 0 0 10px white;
