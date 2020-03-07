@@ -1,4 +1,3 @@
-/*Store resource - JSON file from lesson - into variable*/
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 
 
@@ -22,7 +21,7 @@ fetch(requestURL)
       let birthplace = document.createElement('p');
 
       let image = document.createElement('img');
-      
+
       
       h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
       card.appendChild(h2);
