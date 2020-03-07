@@ -370,7 +370,48 @@ h4 {color:#263D80;}
     
 }*/
 
+div.townInfo {
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap: .5rem;
+    padding: 1rem;
+    border: 1px solid #0a530e;
+    box-shadow: 0 5px 10px 10px #263D80;
+    margin-bottom: 1rem;
+    /*max-width:1020px;*/
 
+    
+}
+div.townInfo  section{
+    background-color: #0a530e;
+    box-shadow: 5px 10px 12px #263D80;
+    padding:.5rem;
+    
+    
+
+}
+div.townInfo section div {
+    padding:1rem 0;
+}
+div.townInfo h3{
+    font-size: 2rem;
+    background-color: transparent;
+    text-shadow: 1px 2px #7A8FCC;
+    
+    
+}
+div.townInfo h4 {
+    font-style: italic;
+    margin-top: -1.25rem;
+}
+div.townInfo p {
+    line-height: .5;
+    color:#263D80;
+}
+div.townInfo img {
+    box-shadow: 0 0 10px #263D80;
+   max-width:100%;
+}
 
 
 
