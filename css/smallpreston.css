@@ -147,7 +147,7 @@ main {
     text-align:left;
     display:flex;
     flex-direction: column-reverse;
-    border:1px solid #0a530e;
+    border:1px solid black;
     background-color: #0a530e;
     padding:.75rem;
     max-width:1020px;
@@ -247,14 +247,14 @@ display: none;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: .25rem;
-    border: 1px solid #0a530e;
+    border: 1px solid black;
     opacity: .9;
     box-shadow:0 0 30px #111;
     
     
 }
 .summary h3 {
-    border:1px solid #0a530e;
+    border:1px solid black;
     padding:.5px 0;
     margin:.25rem .5rem;
     grid-row:1;
