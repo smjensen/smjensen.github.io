@@ -92,7 +92,7 @@ fetch(apiForecastURL)
 			div3.appendChild(image);
 			div3.appendChild(temp);
 
-			document.querySelector('div.forecastTable').appendChild(div1);
+			document.querySelector('div.fiveday').appendChild(div1);
 
 		}
 	}
