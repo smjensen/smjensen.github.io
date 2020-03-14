@@ -202,6 +202,12 @@ article p {
     
     
 }
+.contact2 {
+    font-size:.75rem;
+}
+/*div.contentbox.contactinfo {
+    margin:1rem;
+}*/
 .socialmedia {
     display:flex;
     flex-direction: row;
@@ -256,7 +262,15 @@ display: none;
     margin:0;
    
     
-
+}
+.summary p, span {
+    margin-top:.25rem;
+}
+.summary span {
+    color:  white;
+    font-size: .75rem;
+    line-height:1.25;
+    text-align: left;
 }
 
 #current {
