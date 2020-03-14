@@ -52,13 +52,14 @@
                    
 
                
-               <div class="summary"><h3>Weather Summary</h3>
-           <p>Currently: </p><span><span id="current"></span></span>
-        <p>High: </p><span><span id="temp"></span>&#8457;</span>
-    <p>Wind Chill: </p><span><span id="windchill"></span></span>
-<p>Humidity: </p><span><span id="humidity"></span>%</span>
-<p>Wind Speed: </p><span><span id="windspeed"></span> mph</span></div></div>
-            <div class="contentbox forecast clearfix">
+                        <div id="overlay">
+                            <h3 id="headline">Weather Summary</h3>
+                            <span class="row1">Currently: </span><span class="row1-1" id="valCurrent"></span>
+                            <span class="row1">High: </span><div class="row1-1"><span id="valHigh"></span><span> &#8457;</span></div>
+                            <span class="row1">Wind Chill: </span><div class="row1-1"><span id="valChill"></span><span id="windUnit"> &#8457;</span></div>
+                            <span class="row1">Humidity: </span><div class="row1-1"><span id="valHumid"></span><span>%</span></div>
+                            <span class="row1">Wind Speed: </span><div class="row1-1"><span id="valWind"></span><span>mph</span></div>
+                        </div>
                 
                 <h4>5 Day Forecast</h4>
                 <section class="fiveday">
@@ -124,8 +125,9 @@
 <script src="https://smjensen.github.io/js/home.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script src="https://smjensen.github.io/js/town.js"></script>
-<!-- <script src="https://smjensen.github.io/js/windchill.js"></script> -->
 <script src="https://smjensen.github.io/js/weather.js"></script>
+ <script src="https://smjensen.github.io/js/windchill.js"></script>
+
 <script>
     WebFont.load({
         google: {

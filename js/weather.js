@@ -1,89 +1,99 @@
 
-const d= new Date();
-const todayDayNum= d.getDay();
-const weekday= [];
-weekday[0] ="Sun";
-weekday[1] ="Mon";
-weekday[2] ="Tue";
-weekday[3] ="Wed";
-weekday[4] = "Thu";
-weekday[5] ="Fri";
-weekday[6] ="Sat";
+//----------------- Responsive Menu -----------------
 
-const apiURL="https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=e7e99f72ef4dc80d87dfcaa6b6420751";
+const hambutton = document.getElementsByClassName('hamburger')[0];
+hambutton.addEventListener("click", toggleMenu, false);
+
+function toggleMenu() {
+	document.getElementsByClassName("navBar")[0].classList.toggle("responsive");
+};
+
+//----------------- Popup Script -----------------
+
+var day = new Date();
+var today = day.getDay();
+
+if(today == 5) {
+	document.getElementById("popup").className = "show";
+}
+
+//-----------------Weather Data------------------
+
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=35b12c8d999fdda2699d5d2204b76ea4";
+
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
-    document.getElementById('current').textContent = jsObject.list[0].weather[0].main;
-    document.getElementById('temp').textContent = jsObject.list[0].main.temp_max.toFixed(0);
-    document.getElementById('windspeed').textContent = jsObject.list[0].wind.speed.toFixed(0);
-    document.getElementById('humidity').textContent = jsObject.list[0].main.humidity;
-    
-    
-   const time = jsObject.list;
-   let dtemp= 1;
-   let forecastDayNum=todayDayNum;
-   for (let i=0; i<time.length; i++) {
-    
-    if (time[i].dt_txt.includes("18:00:00")) {
-      
-       
-      let icon = time[i].weather[0].icon;
-   let descr= time[i].weather[0].description;
-   let iconsrc= 'https://openweathermap.org/img/w/' + icon + '.png';
-   let daytemp = jsObject.list[i].main.temp.toFixed(0);
+	console.log(jsObject);
+	
+	const weatherAPI = jsObject;
 
-   
-   let mytemp="daytemp" + dtemp;
-   let myicon= "icon" + dtemp;
-   document.getElementById(mytemp).innerHTML= daytemp + "&#8457;";
-   document.getElementById(myicon).setAttribute('src', iconsrc);
-   document.getElementById(myicon).setAttribute('alt', descr);
+    document.getElementById('valCurrent').textContent = weatherAPI.weather[0].main;
+    document.getElementById('valHigh').textContent = weatherAPI.main.temp_max.toFixed(1);
+    document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
+	document.getElementById('valWind').textContent = weatherAPI.wind.speed;
+	
+  });
 
-   forecastDayNum+=1;
-    if(forecastDayNum===7) {
-      forecastDayNum=0;}
-     
-      let myweekday= "weekday" +dtemp;
-      document.getElementById(myweekday).innerHTML=weekday[forecastDayNum];
+//-----------------Forecast Data------------------
 
-   dtemp+=1;
-   
+const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=35b12c8d999fdda2699d5d2204b76ea4";
+
+fetch(apiForecastURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+	console.log(jsObject);
+	
+	const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+
+	for (let i = 0; i < jsObject.list.length; i++ ){
+		if (new Date(jsObject.list[i].dt_txt).getHours() == 18) {
+
+			var forecastAPI = jsObject.list[i];
+			
+			let div1 = document.createElement('div');
+			let div2 = document.createElement('div');
+			let head = document.createElement('strong');
+			let div3 = document.createElement('div');
+			let image = document.createElement('img');
+			let temp = document.createElement('p');
+
+			const imageidentifier = forecastAPI.weather[0].main;
+			if (imageidentifier == "Clear"){
+				var imgSource = "assets/sunny.png";
+			} 
+			else if (imageidentifier == "Clouds"){
+				var imgSource = "assets/cloud.png";
+			}
+			else if (imageidentifier == "Snow"){
+				var imgSource = "assets/snow.png";
+			}
+			else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
+				var imgSource = "assets/rain.png";
+			}
+			else if (imageidentifier == "Thunderstorm"){
+				var imgSource = "assets/thunderstorm.png";
+			}
+			else {
+				var imgSource = "assets/mist.png"
+			}
 
 
-     }}
-   
-     
-    });
+			head.textContent = dayOfWeek[new Date(forecastAPI.dt_txt).getDay()];
+			image.setAttribute('src', imgSource);
+			image.setAttribute('alt', forecastAPI.weather[0].description);
+			temp.innerHTML = forecastAPI.main.temp.toFixed(1) + " &#8457;";
 
-   /*==================windchill===============================*/ 
-    let t = parseFloat(document.getElementById("temp").textContent);
-    let s = parseFloat(document.getElementById("windspeed").textContent);
-    
-    let f;
-    if (t<=50 && s>=3.0) {
-    
-    f = 35.74 + 0.6215*t - 35.75*s**0.16 + 0.4275*t*s**0.16;
-    f= f.toFixed(0) + "&#8457;";
-    }
-    else {f= "N/A";}
-   
-    document.getElementById("windchill").textContent = f; 
+			div1.appendChild(div2);
+			div2.classList.add("Day");
+			div2.appendChild(head);
+			div3.classList.add("DayContent");
+			div1.appendChild(div3);
+			div3.appendChild(image);
+			div3.appendChild(temp);
 
-/*//works with <body onload="windChill()">
-function windChill() {
-    
-    let t = parseFloat(document.getElementById("temp").textContent);
-    let s = parseFloat(document.getElementById("windspeed").textContent);
-    //console.log(s);
-    let f;
-    if (t<=50 && s>=3.0) {
-    
-    f = 35.74 + 0.6215*t - 35.75*s**0.16 + 0.4275*t*s**0.16;
-    f= f.toFixed(0)+ "&#8457;";
-    }
-    else {f= "N/A";}
-   
-    document.getElementById("windchill").textContent = f;
-}*/
+			document.querySelector('div.forecastTable').appendChild(div1);
+
+		}
+	}
+  });
