@@ -28,10 +28,10 @@ fetch(apiURL)
 	
 	const weatherAPI = jsObject;
 
-    document.getElementById('valCurrent').textContent = weatherAPI.weather[0].main;
-    document.getElementById('valHigh').textContent = weatherAPI.main.temp_max.toFixed(1);
-    document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
-	document.getElementById('valWind').textContent = weatherAPI.wind.speed;
+    document.getElementById('current').textContent = weatherAPI.weather[0].main;
+    document.getElementById('temp').textContent = weatherAPI.main.temp_max.toFixed(1);
+    document.getElementById('humidity').textContent = weatherAPI.main.humidity;
+	document.getElementById('windspeed').textContent = weatherAPI.wind.speed;
 	
   });
 
