@@ -100,6 +100,8 @@ fetch(apiForecastURL)
 
   //----------------- Wind Chill Calculator -----------------
 
+//----------------- Wind Chill Calculator -----------------
+
 const tempF = parseFloat(document.getElementById("valHigh").textContent);
 const speed = parseFloat(document.getElementById("valWind").textContent);
 
@@ -133,19 +135,3 @@ function windChill (TempF, speed) {
 	var windChillFactor = 35.74 + (0.6215 * TempF) - (35.75 * speedPower) + (0.4275 * TempF * speedPower);
 	return windChillFactor;
 }
-
-//-----------------Footer Script-----------------
-
-const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-
-let date = new Date();
-let year = date.getFullYear();
-// let lastModify = document.lastModified;
-
-let lastModify = new Date(document.lastModified);
-let formattedDate = week[lastModify.getDay()] + ", " + lastModify.getDate() + " " + month[lastModify.getMonth()]+ " " + lastModify.getFullYear();
-
-document.getElementById("currentYear").textContent = year;
-document.getElementById("lastModif").textContent = formattedDate;
-
