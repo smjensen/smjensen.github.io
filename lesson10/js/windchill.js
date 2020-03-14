@@ -1,21 +1,6 @@
 
-//----------------- Responsive Menu -----------------
 
-const hambutton = document.getElementsByClassName('hamburger')[0];
-hambutton.addEventListener("click", toggleMenu, false);
 
-function toggleMenu() {
-	document.getElementsByClassName("navBar")[0].classList.toggle("responsive");
-};
-
-//----------------- Popup Script -----------------
-
-var day = new Date();
-var today = day.getDay();
-
-if(today == 5) {
-	document.getElementById("popup").className = "show";
-}
 
 //-----------------Weather Data------------------
 
@@ -29,8 +14,11 @@ fetch(apiURL)
 	const weatherAPI = jsObject;
 
     document.getElementById('valCurrent').textContent = weatherAPI.weather[0].main;
+
     document.getElementById('valHigh').textContent = weatherAPI.main.temp_max.toFixed(1);
+
     document.getElementById('valHumid').textContent = weatherAPI.main.humidity;
+	
 	document.getElementById('valWind').textContent = weatherAPI.wind.speed;
 	
   });
@@ -52,26 +40,38 @@ fetch(apiForecastURL)
 			var forecastAPI = jsObject.list[i];
 			
 			let div1 = document.createElement('div');
+
 			let div2 = document.createElement('div');
+
 			let head = document.createElement('strong');
+
 			let div3 = document.createElement('div');
+
 			let image = document.createElement('img');
+
 			let temp = document.createElement('p');
 
 			const imageidentifier = forecastAPI.weather[0].main;
+
 			if (imageidentifier == "Clear"){
+
 				var imgSource = "pics/sunny.png";
 			} 
+
 			else if (imageidentifier == "Clouds"){
+
 				var imgSource = "pics/cloudy.png";
 			}
 			else if (imageidentifier == "Snow"){
+
 				var imgSource = "pics/snowy.png";
 			}
 			else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
+
 				var imgSource = "pics/rainy.png";
 			}
 			else if (imageidentifier == "Thunderstorm"){
+
 				var imgSource = "pics/thunder.png";
 			}
 			else {
@@ -100,7 +100,6 @@ fetch(apiForecastURL)
 
   //----------------- Wind Chill Calculator -----------------
 
-//----------------- Wind Chill Calculator -----------------
 
 const tempF = parseFloat(document.getElementById("valHigh").textContent);
 const speed = parseFloat(document.getElementById("valWind").textContent);
