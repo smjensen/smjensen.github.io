@@ -273,12 +273,12 @@ display: none;
     text-align: left;
 }
 
-#current {
+#valCurrent {
     grid-row:2;
     grid-column: 2;
     
 }
-#temp {
+#valHigh {
     grid-row:3;
     grid-column: 2;
     
@@ -288,12 +288,12 @@ display: none;
     grid-column:2;
 
 }
-#humidity {
+#valHumid {
     grid-row:5;
     grid-column:2;
 
 }
-#windspeed {
+#valWind {
     grid-row:6;
     grid-column:2;
 }

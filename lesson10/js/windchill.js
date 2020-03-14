@@ -60,22 +60,22 @@ fetch(apiForecastURL)
 
 			const imageidentifier = forecastAPI.weather[0].main;
 			if (imageidentifier == "Clear"){
-				var imgSource = "assets/sunny.png";
+				var imgSource = "pics/sunny.png";
 			} 
 			else if (imageidentifier == "Clouds"){
-				var imgSource = "assets/cloud.png";
+				var imgSource = "pics/cloudy.png";
 			}
 			else if (imageidentifier == "Snow"){
-				var imgSource = "assets/snow.png";
+				var imgSource = "pics/snowy.png";
 			}
 			else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
-				var imgSource = "assets/rain.png";
+				var imgSource = "pics/rainy.png";
 			}
 			else if (imageidentifier == "Thunderstorm"){
-				var imgSource = "assets/thunderstorm.png";
+				var imgSource = "pics/thunder.png";
 			}
 			else {
-				var imgSource = "assets/mist.png"
+				var imgSource = "pics/misty.png"
 			}
 
 
