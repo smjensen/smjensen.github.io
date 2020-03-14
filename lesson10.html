@@ -1,0 +1,126 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Preston weather page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="City of Preston weather page including interesting news stories.">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="dns-prefetch" href="https://openweathermap.org">
+  
+        <link rel="shortcut icon" href="../favicon.ico">
+    </head>
+    <body onload= "showBanner()">
+        <section  id="banner" class="noshow">
+           <h1>Saturday = Preston Pancakes in the Park!<br>
+            9:00 a.m. Saturday at the city park pavilion.</h1>
+        </section>
+    <header>
+
+        <img class="logo" src="../lesson6/images/iconmedweb.jpg" alt="weatherornot logo">
+        <section class="headings">
+            <h1> Weather or Not</h1>
+            <div class="motto"><p>Helping you plan your day</p></div>
+        </section>
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="topNav" class="hide">
+                <li class="menu"><a href="#">Menu</a></li>
+                <li><a href="../lesson9/index.html">Home</a> </li>
+                <li class="active"><a href= "preston-10.html" >Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+                </ul>
+            
+        </nav>
+    
+    
+        <main>
+            <h2 class="city">Preston</h2>
+            <div class="contentbox hero">
+                <picture class="heroimage">
+                    <source media="(max-width: 600px)" srcset="images/frenchfence500.jpg">
+                        <source media="(max-width: 900px)" srcset="images/frenchfence800.jpg">
+                            <img src="images/frenchfence1100.jpg" alt="crooked fence">
+                        </picture>
+                   
+ <!--                       <source media="(min-width: 600px) and (max-width:899px)" srcset="images/hero800.jpg">
+                        <source media="(min-width: 900px)" srcset="images/hero1100.jpg">
+                        <img src="images/hero500.jpg" alt="landscape">-->
+                         
+ <!--             <img src="images/hero.jpg" sizes="90vw"  alt="landscape" srcset="images/hero500.jpg 500w, images/hero800.jpg 800w, images/hero1100.jpg 1100w">  
+                </figure>-->
+               
+               <div class="summary"><h3>Weather Summary</h3>
+           <p>Currently: </p><span><span id="current"></span></span>
+        <p>High: </p><span><span id="temp"></span>&#8457;</span>
+    <p>Wind Chill: </p><span><span id="windchill"></span></span>
+<p>Humidity: </p><span><span id="humidity"></span>%</span>
+<p>Wind Speed: </p><span><span id="windspeed"></span> mph</span></div></div>
+            <div class="contentbox forecast clearfix">
+                
+                <h4>5 Day Forecast</h4>
+                <section class="fiveday">
+                    <div><h3 class="day" id="weekday1">day1</h3><img src= "images/forecastplaceholderimage.png" id="icon1" alt=""><p class="temp" id="daytemp1"></p></div><!--img id="icon" p id="day1temp" &#8457;-->
+                    <div><h3 class="day" id="weekday2">day2</h3><img src="images/forecastplaceholderimage.png" id="icon2" alt=""><p class="temp" id="daytemp2"> </p></div>
+                    <div><h3 class="day" id="weekday3">day3</h3><img src="images/forecastplaceholderimage.png" id="icon3" alt=""><p class="temp" id="daytemp3"> </p></div>
+                    <div><h3 class="day" id="weekday4">day4</h3><img src="images/forecastplaceholderimage.png" id="icon4" alt=""><p class="temp" id="daytemp4"> </p></div>
+                    <div><h3 class="day" id="weekday5">day5</h3><img src="images/forecastplaceholderimage.png" id="icon5" alt=""><p class="temp" id="daytemp5"> </p></div>
+
+                </section>
+
+            </div>
+            <div class="contentbox cityarticle">
+                <article>
+                    
+                <img src="images/wildflowers370.jpg"  alt="wildflowers" class="articleimage"> 
+                <div>
+                    <h4>Heavenly Kisses</h4>
+                <p class="author">by H. Stratton</p>
+                <p>Nothing can brighen the drab monotony of the landscape better than pockets of wildflowers.  They are a gift from the heavens as a reminder that
+                    God is always there to lift our hearts and lighten our load. The pioneers must have delighted at the sign of life from these beauties as they
+                    trudged along their well-beaten path.  We can delight in their presence as well as we press forward on our own trail. Enjoying the journey
+                is a necessary skill to refine.  If we can't find happiness while on this earth, how will we expect to achieve it in the next?</p>
+            </div></article></div>
+           
+            <div class="contentbox contactinfo">
+                
+                
+                <p class="contact1"> 
+                   <b>Weather or Not<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263</b>
+                    </p>
+                   <p class="contact2"><b> &#9743; 999.999.9999<br>
+                    &#9993; weatherornot@worn.news</b></p>
+                    <ul class="socialmedia">
+                        <li><a href="https://twitter.com/" target="_blank" rel="noopener"><img src="../lesson6/images/twitter1.png" alt="twitter icon"></a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener"><img src="../lesson6/images/pinterest1.png" alt="pinterest icon"></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="../lesson6/images/facebook1.png" alt="facebook icon"></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="../lesson6/images/linkedin1.png" alt="linkedin icon"></a></li>
+                        <li><a href="https://aboutme.google.com/" target="_blank" rel="noopener"><img src="../lesson6/images/googleplus1.png" alt="googleplis icon"></a> </li>
+                  
+                    </ul>
+                       
+                <img src= "../lesson11/images/mappreston4.jpg" class="map" alt="map of preston">
+
+            </div>
+    </main>
+    <footer>
+        &copy;Weather or Not | <a href="../index.html">Heather Stratton</a> | Weather Data from <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a><br>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script>WebFont.load({google: {families:['Merriweather Sans', 'Merriweather']}});</script>
+    <script src="../lesson8/js/script.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
