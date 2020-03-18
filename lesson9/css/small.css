@@ -1,0 +1,121 @@
+
+.font{
+	font-family: 'Merriweather', serif;
+}
+
+.sansfont{ 
+	font-family: 'Merriweather Serif', sans-serif;
+}
+
+#logo {
+	
+	position: absolute;
+	top: 45px;
+	right: 0px;
+
+  }
+
+.fullwidth {
+	display:block;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	
+  }
+  
+img {
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	max-width: 150%;
+        
+	
+	
+  }
+
+body {
+    max-width: 960px;
+	font-family: 'Meriweather Serif', sans-serif;
+	
+    
+    
+}
+
+p {
+    
+    background-color: lightcyan;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    padding: .5rem;
+    background-color: rgb(2, 0, 139);
+    color: #fff;
+
+    
+}
+
+footer {
+	display: block;
+	padding: 0.75rem;
+    background-color: rgb(2, 0, 139);
+    color: #fff;
+    text-align: left;
+	font-size: small;
+	width:1500px;
+}
+
+h1 {
+    background-color: rgb(2, 0, 139);
+    color: #fff;
+    margin-left:10rem;
+    margin-right:4rem;
+    font-family: 'Montserrat', serif;
+}
+h2 {
+    font: #404040;
+	margin-bottom: -1rem;
+	margin-left: 10rem;
+        
+}
+
+li{
+	float: left;
+}
+
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+    background-color: rgb(2, 0, 139);
+    color: #fff;
+	text-align: center;
+	font-family: 'Montserrat', serif;
+	
+}
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+nav a:hover {
+	background-color: white;
+	color: #404040;
+}
+
+background{
+	color: #f8f8f8;
+}
