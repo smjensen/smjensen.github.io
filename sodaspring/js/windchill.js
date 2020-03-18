@@ -25,7 +25,7 @@ fetch(apiURL)
 
 //-----------------Forecast Data------------------
 
-const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=35b12c8d999fdda2699d5d2204b76ea4";
+const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=35b12c8d999fdda2699d5d2204b76ea4";
 
 fetch(apiForecastURL)
   .then((response) => response.json())
@@ -40,42 +40,30 @@ fetch(apiForecastURL)
 			var forecastAPI = jsObject.list[i];
 			
 			let div1 = document.createElement('div');
-
 			let div2 = document.createElement('div');
-
 			let head = document.createElement('strong');
-
 			let div3 = document.createElement('div');
-
 			let image = document.createElement('img');
-
 			let temp = document.createElement('p');
 
 			const imageidentifier = forecastAPI.weather[0].main;
-
 			if (imageidentifier == "Clear"){
-
-				var imgSource = "pics/sunny.png";
+				var imgSource = "assets/sunny.png";
 			} 
-
 			else if (imageidentifier == "Clouds"){
-
-				var imgSource = "pics/cloudy.png";
+				var imgSource = "assets/cloud.png";
 			}
 			else if (imageidentifier == "Snow"){
-
-				var imgSource = "pics/snowy.png";
+				var imgSource = "assets/snow.png";
 			}
 			else if (imageidentifier == "Rain" || imageidentifier == "Drizzle"){
-
-				var imgSource = "pics/rainy.png";
+				var imgSource = "assets/rain.png";
 			}
 			else if (imageidentifier == "Thunderstorm"){
-
-				var imgSource = "pics/thunder.png";
+				var imgSource = "assets/thunderstorm.png";
 			}
 			else {
-				var imgSource = "pics/misty.png"
+				var imgSource = "assets/mist.png"
 			}
 
 
@@ -92,7 +80,7 @@ fetch(apiForecastURL)
 			div3.appendChild(image);
 			div3.appendChild(temp);
 
-			document.querySelector('div.fiveday').appendChild(div1);
+			document.querySelector('div.forecastTable').appendChild(div1);
 
 		}
 	}
