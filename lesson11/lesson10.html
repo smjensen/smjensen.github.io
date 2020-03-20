@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Preston</title>
+      <meta name="author" content="Stewart Jensen">
+      <meta name="description" content="Preston, improved.">
+      <link rel="stylesheet" href="css/normalizepreston.css">
+      <link rel="stylesheet" href="css/smallpreston.css" >
+      <link rel="stylesheet" href="css/mediumweathercss.css">
+      <link rel="stylesheet" href="css/largepreston.css"> -
+        <link rel="dns-prefetch" href="https://openweathermap.org">
+  
+        <link rel="shortcut icon" href="../favicon.ico">
+    </head>
+    <body onload= "showBanner()">
+        <section  id="banner" class="noshow">
+           <h1>Saturday = Preston Pancakes in the Park!<br>
+            9:00 a.m. Saturday at the city park pavilion.</h1>
+        </section>
+    <header>
+
+        <img class="logo" src="https://s7d2.scene7.com/is/image/TWCNews/0801_n13_chuluotaweatherjpg?wid=2000&hei=1125&$wide-bg$" width="500px" alt="clouds over field">
+        <section class="headings">
+            <h1> Weather Fixens</h1>
+            <div class="motto"><p>We cannot have you having your day ruined</div>
+        </section>
+    </header>
+    
+    <nav>
+        <ul id="topNav" class="hide">
+            <li><a href="https://smjensen.github.io/lesson9/lesson9.html">Menu</a></li>
+            <li class="active"><a href="https://smjensen.github.io/lesson10/lesson10.html">Preston</a></li>
+            <li><a href="https://smjensen.github.io/sodaspring/sodasprings.html">Soda Springs</a></li>
+            <li><a href="https://smjensen.github.io/fishhaven/fishhaven.html">Fish Haven</a></li>
+            <li><a href="https://smjensen.github.io/smjensen.github.io/lesson8.html">Storm Center</a></li>
+            <li><a href="https://smjensen.github.io/smjensen.github.io/lesson7.html">Gallery</a>
+            </ul>
+    </nav>
+    
+    
+        <main>
+            <h2 class="city">Preston</h2>
+            <div class="contentbox hero">
+                <picture class="heroimage">
+                    <source media="(max-width: 600px)" srcset="pics/mountain400.jpg">
+                        <source media="(max-width: 900px)" srcset="pics/mountain600.jpg">
+                            <img src="pics/mountainog.jpg" alt="">
+                        </picture>
+                   
+
+               
+                <div class="summary"><h3>Weather Summary</h3>
+                <p>Now: </p><span><span id="valCurrent"></span></span>
+                <p>High Today: </p><span><span id="valHigh"></span>&#8457;</span>
+                <p>Wind Factor: </p><span><span id="windchill"></span></span>
+                <p>Humidity: </p><span><span id="valHumid"></span>%</span>
+                <p>Wind Speed: </p><span><span id="valWind"></span> mph</span></div></div>
+                <div class="contentbox forecast clearfix">
+                                 
+                                 <h4>5 Day Forecast</h4>
+                                 <div class="fiveday">
+                                   <!--  <div><h3 class="day" id="weekday1">day1</h3><img src= "pics/grey.png" id="icon1" alt=""><p class="temp" id="daytemp1"></p></div>
+                                     <div><h3 class="day" id="weekday2">day2</h3><img src="pics/grey.png" id="icon2" alt=""><p class="temp" id="daytemp2"> </p></div>
+                                     <div><h3 class="day" id="weekday3">day3</h3><img src="pics/grey.png" id="icon3" alt=""><p class="temp" id="daytemp3"> </p></div>
+                                     <div><h3 class="day" id="weekday4">day4</h3><img src="pics/grey.png" id="icon4" alt=""><p class="temp" id="daytemp4"> </p></div>
+                                     <div><h3 class="day" id="weekday5">day5</h3><img src="pics/grey.png" id="icon5" alt=""><p class="temp" id="daytemp5"> </p></div>
+                 
+                                 </div>  -->
+
+            </div>
+            <div class="contentbox cityarticle">
+                <article>
+                    
+                <img src="https://lirp-cdn.multiscreensite.com/9a32150d/dms3rep/multi/opt/preston-idaho-airport-439x267-640w.JPG"  alt="Preston" class="articleimage"> 
+                <div>
+                    <h4>Article</h4>
+                <p class="author">by Unknown</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in ultricies neque, et rutrum lectus. 
+                    Vivamus suscipit justo eget hendrerit suscipit. Aliquam interdum pulvinar nisi eu convallis. Vivamus sed 
+                    interdum nunc. Suspendisse non quam a urna ultricies lacinia et ac ligula. Sed quis sem eget ipsum mollis 
+                    ullamcorper sed a turpis. Etiam congue mollis euismod. Ut vel sem eget ipsum pellentesque dapibus. Aliquam 
+                    vitae orci urna. </p>
+            </div></article></div>
+
+            <div class="contentbox cityarticle">
+                <article>
+                    
+               
+                <div>
+                    <h4>Upcoming Gettogethers</h4>
+                <p class="author"></p>
+                <p>                  March 29: Work Creek Revival<br>
+                    July 8-12: Napoleon Dynamite Festival<br>
+                    November 2-4: Freedom Days<br> </p>
+            </div></article></div>
+           
+                
+                
+    </main>
+    <footer>
+        <div class="contentbox contactinfo">
+
+            
+            <p class="contact1"> 
+               <b>WeatherFixens</b><br>
+                Preston, ID 83263
+                </p>
+               <p class="contact2"> &#9743; 999.999.9999<br>
+                &#9993; weatherfixens@jensen.news</p>
+                <ul class="socialmedia">
+                    <li><a href="https://twitter.com/" target="_blank"><img src="https://www.freeiconspng.com/uploads/logo-twitter-picture-download-14.png" width="50px" alt="twitter icon"></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><img src="https://blog.firstdownplaybook.com/wp-content/uploads/2019/07/pinterest-logo.png" width="50px" alt="pinterest icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" width="50px" alt="facebook icon"></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" width="50px" alt="linkedin icon"></a></li>
+                    <li><a href="https://aboutme.google.com/" target="_blank"><img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102015/google-plus.png?itok=36-YQpMn" width="50px" alt="googleplus icon"></a> </li>
+              
+                </ul>
+                   
+            <img src="https://www.campusfrance.org/sites/default/files/styles/mobile_visuel_principal_page/public/Fotolia_171500112_Subscription_Monthly_M.jpg?itok=-4sCWSJZ" width="300px" class="map" alt="map">
+
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> | <a href="https://smjensen.github.io/"> Stewart Jensen </a>| Idaho | Weather from <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap <br>
+            <a href="https://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning">BYUI Online Learning</a>
+        </p>
+        <p>
+            Date: <span id="currentDate"></span><br>
+            Last Updated: <span id="lastUpdateTime"></span> <br>
+            
+
+        </p>
+</footer>
+<script src="https://smjensen.github.io/js/home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+
+ <script src="https://smjensen.github.io/lesson10/js/windchill.js"></script>
+
+<script>
+    WebFont.load({
+        google: {
+            families: ['Eczar', 'Cormorant']
+        }
+    });
+    
+</script>
+</body>
+
+</html>
