@@ -1,0 +1,272 @@
+@media only screen and (min-width:32.5em) {
+    nav { /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,263d80+0,596895+100 */
+ /*background: #1e5799; /* Old browsers */
+ /*background: -moz-linear-gradient(top,  #1e5799 0%, #263d80 0%, #596895 100%); /* FF3.6-15 */
+ /*background: -webkit-linear-gradient(top,  #1e5799 0%,#263d80 0%,#596895 100%); /* Chrome10-25,Safari5.1-6 */
+ /*background: linear-gradient(to bottom,  #1e5799 0%,#263d80 0%,#596895 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#596895',GradientType=0 ); /* IE6-9 */
+ 
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,263d80+0,7a8fcc+100 */
+ /*background: #1e5799; /* Old browsers */
+ /*background: -moz-linear-gradient(top,  #1e5799 0%, #263d80 0%, #7a8fcc 100%); /* FF3.6-15 */
+ /*background: -webkit-linear-gradient(top,  #1e5799 0%,#263d80 0%,#7a8fcc 100%); /* Chrome10-25,Safari5.1-6 */
+ /*background: linear-gradient(to bottom,  #1e5799 0%,#263d80 0%,#7a8fcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7a8fcc',GradientType=0 ); /* IE6-9 */
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,7a8fcc+1,263d80+100 */
+ background: #1e5799; /* Old browsers */
+ background: -moz-linear-gradient(top,  #1e5799 0%, #7a8fcc 1%, #263d80 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  #1e5799 0%,#7a8fcc 1%,#263d80 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  #1e5799 0%,#7a8fcc 1%,#263d80 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#263d80',GradientType=0 ); /* IE6-9 */
+ 
+ }
+ /*#banner {
+     /*font-size:1.75rem;
+     line-height: 1.25;
+     padding: .25rem 0;
+ }*/
+ 
+ 
+    /* .headings h1 {
+         font-size: 2rem;
+ 
+     }*/
+     .motto p {
+         margin-top:-1rem;
+     }
+     
+     
+     body {
+         line-height:1.25rem;
+     }
+     .summary {
+         top:1.25rem;
+         left:3.5rem;
+     }
+     #windchill, #temp, #windspeed {
+         margin:0;
+     }
+    
+     /*article {
+         flex-direction:row-reverse;
+ 
+     }
+     .articleimage {
+         float:right;
+         margin-left: 8px;
+         margin-right: 1rem;
+         margin-top: 2rem;
+         max-width:414px;
+         max-height:216px;
+         
+         
+     }
+     article h4 {
+         margin-left: 1rem;
+     }
+     p.author{ 
+         margin-left: 1rem;
+ 
+     }
+     article p {
+         text-align:left;
+         margin-left: 1rem;
+     }*/
+     article {
+         display:grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-column-gap:1rem;
+         padding:.5rem 1.5rem;
+        /* position: relative;*/
+ 
+     }
+     .articleimage {
+         grid-column:3;
+         grid-row:1/3;
+         align-self: center;
+         position:relative;
+         top: 20px;
+         left: 10px;
+         border:1px solid #17244D;
+         box-shadow: 0 0 10px #111;
+     }
+     article div {
+         grid-column: 1/3;
+         grid-row: 1/3;
+         align-self:center;
+ 
+     }
+     p.author {
+ 
+     }
+     article h4 {
+         margin-bottom:0;
+     }
+     article p {
+         text-align:left;
+         margin-top: -.25rem;
+     }
+     .contactinfo  {
+         grid-template-rows: 75px 75px 75px;
+         grid-template-columns: 1fr 1fr;
+         grid-row-gap: 0;
+         grid-column-gap: 1rem;
+        /* margin-left:.25rem;
+         margin-right:.25rem;*/
+         margin:0;
+         margin-bottom: -1rem;
+        /* align-items:start;*/
+     }
+     .contact1  {
+         grid-column: 2;
+         grid-row: 1;
+        /* align-self: start;*/
+         justify-self:start;
+     }
+     .contact2 {
+         grid-column: 2;
+         grid-row: 2;
+        /* align-self: start;
+         justify-self:center;*/
+        
+         
+ 
+     }
+     .socialmedia {
+         grid-column: 2;
+         grid-row:3;
+        /* align-self: start;
+         justify-self:start;*/
+     }
+    
+     /*.contactinfo p {
+         grid-column:2;
+         grid-row:2/4;
+         display:inline;
+     }*/
+    .map {
+        display:block;
+        grid-column: 1;
+        grid-row: 1 / 4;
+        max-width:90%;
+        margin:auto;
+        align-self: start;
+ 
+        /*align-self: center;
+        justify-self:baseline;*/
+       
+ 
+    }
+    .forecast {
+     display:grid;
+     /*flex-direction: column;
+    
+    /* align-items: center;
+     justify-content: center;
+     max-width: 1020px;
+     
+     align-content:center;
+     padding: 1rem;
+     /*padding-bottom:1rem;*/
+     
+     margin:0 auto;
+     margin-bottom:1rem;
+             
+ }
+ .forecast h4 {
+     
+ }
+ .fiveday {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+     border: 1px solid  #17244D;
+ 
+ }
+ /* .forecast p {
+     background-color: white;
+     border: 1px solid  #17244D;
+     margin-top: -1.5rem;
+     font-size:1.5rem;
+     padding:.5rem;
+     display: inline;
+     
+ 
+ }*/
+    .fiveday div{
+        border:1px solid  #17244D;
+         grid-row:1;
+        
+        
+ 
+    }
+ 
+    .day {
+        /*grid-row: 1;
+       /* border:1px solid rgba(0,0,0,0.3);*/
+        padding:5px 30px;
+       /* border-right:1px solid  #17244D;
+        border-left:1px solid  #17244D;
+        border-right:.5px solid  #17244D;*/
+        
+    }
+   .temp {
+      /* grid-row:3;
+       margin-bottom:.25rem;*/
+       margin-top:0;
+       
+ 
+       
+   }
+   .fiveday img {
+       margin:0;
+      /* border-right:.5px solid  #17244D;
+       border-left:.5px solid  #17244D;*/
+   }
+   .fiveday h3 {
+       margin-top:0;
+       margin-bottom:0;
+      
+   }
+   .gallery {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 10px;
+       
+ 
+   }
+   
+ }
+
+  div.townInfo section {
+    display:flex;
+    max-width: 660px;
+    flex-direction: row;
+    justify-content: space-around; 
+    
+
+}
+div.townInfo section:nth-child(even) {
+    flex-direction:row-reverse;
+}
+div.townInfo section div {
+    padding:1.5rem;
+    text-align:center;
+    
+
+}
+div.townInfo h3 {
+    line-height:2rem;
+    
+}
+div.townInfo p {
+  line-height:1;
+  /*padding: 0 3.5rem;*/
+
+} 
+div.townInfo img {
+    max-width:100%;
+    height:auto;
+  }
+
+}
