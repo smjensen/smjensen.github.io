@@ -3,7 +3,7 @@ $(document).ready(function() {
   // initialize variables
   // human = either x or o, whatever the player picks
   // ai = either x or o, whatever the player doesn't pick
-
+  var human, ai;
 
   // each of these corresponds to a cell in the game table
   var c00, c01, c02, c10, c11, c12, c20, c21, c22;
@@ -12,8 +12,18 @@ $(document).ready(function() {
   var turn = 0;
 
   // player picks x or o
-
-
+  $("#x").click(function() {
+    human = "X";
+    ai = "O";
+    $("#choice").fadeOut();
+    $("#board").fadeTo("slow",1);
+  });
+  $("#o").click(function() {
+    human = "O";
+    ai = "X";
+    $("#choice").fadeOut();
+    $("#board").fadeTo("slow",1);
+  });
 
   //all squares should be empty
   //clears the board
