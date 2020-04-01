@@ -1,0 +1,76 @@
+body {
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+/* first screen */
+
+#choice {
+  font-size: 60px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+#x, #o {
+  font-weight: bold;
+}
+
+/* board */
+
+#container {
+  text-align: center;
+  margin: 0 auto;
+  width: 420px;
+  height: 420px;
+  position: relative;
+}
+
+#board {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-collapse: collapse;
+  border: 11px solid;
+}
+
+td {
+  border: 10px solid;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* final screen */
+
+#winner {
+  font-size: 55px;
+  margin-top: -15px;
+}
+
+#new-game {
+  font-size: 55px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer a {
+}
