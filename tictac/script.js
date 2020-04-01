@@ -24,6 +24,7 @@ $(document).ready(function() {
     $("#choice").fadeOut();
     $("#board").fadeTo("slow",1);
   });
+
   
 
   //all squares should be empty
