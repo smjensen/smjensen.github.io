@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salmon River Adventures home</title>
+        <meta name="description" content="Salmon River Adventures home">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="preconnect" href="https://openweathermap.org">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                <img src= "images/logofinal1.png" alt="Salmon River Adventures logo">
+                
+            </div>
+            
+            <nav class="topNav">
+                <button onclick="menu()">&#9776;</button>
+                <ul id="topNav" class="hide">
+                    
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Adventures</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <section class="hero">
+                    <picture class="heroimage">
+                        <source media="(max-width: 600px)" srcset="images/AnggaIndratama600.jpg">
+                            <source media="(max-width: 900px)" srcset="images/AnggaIndratama900.jpg">
+                                <img src="images/AnggaIndratama1020.jpg" alt="excited rafters">
+                            </picture>
+                
+                <div class="call"><a href="reservations.html">Make A Plan</a></div>
+                <section class="weather">
+                    <h4>Riggins, ID </h4>
+                    <h4><span id="high"></span>&deg; </h4>
+                    
+                    <h4 id="current"> </h4>
+                    <img src="images/logo20.png" id="icon" alt="logo image">
+            
+                    <h4>Humidity: <span id="humidity"></span>%</h4>
+                </section>
+            </section>
+            <section class="testimonials">
+                <div class="test1">
+                <img src= "images/RuneHaugseng640.jpg" alt="intense rapids">
+                <div class="text">
+                <h3>My sons learned hands-on survival skills and loved every minute of it. Riding the river was an excellent teaching opportunity. We have great memories.</h3>
+                <p>-Ernest, father of 3 boys</p>
+            </div></div>
+            <div class="test2">
+                <div class="text">
+                    <h3>This rafting trip was the best family reunion we have ever had! I can't wait to do it again!</h3>
+                    <p>-Kyle, age 14</p>
+                </div>
+                <img src= "images/AnggaIndratama2640.jpg" alt="rafting family">
+                
+        </div>
+                
+
+            </section>
+            
+            </main>
+            <footer>
+                <img src="images/logo100.png" alt="Salmon River Adventures logo" width="20">
+                &copy; <span id="currentDate"></span> | Heather Stratton |<a href="resources.html"> Resources</a>
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter1.png" alt="twitter icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook1.png" alt="facebook icon"></a></li>
+                    <li><a href="https://aboutme.google.com/" target="_blank" rel="noopener"><img src="images/googleplus1.png" alt="googleplus icon"></a> </li>
+                    </ul>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script>WebFont.load({google: {families:['Covered By Your Grace', 'Oxygen']}});</script>
+            <script src="js/scripts.js"></script>
+            <script src="js/weather.js"></script>
+
+        </body>
+        </html>

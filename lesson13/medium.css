@@ -1,0 +1,100 @@
+
+    
+    
+    nav.topNav ul {
+        text-align:center;
+
+    }
+    
+    nav.topNav button {
+        text-align:center;
+    }
+    /*=======================*/
+    section.hero {
+        position: relative;
+    }
+    
+    /*===============*/
+        
+    div.call {
+        position:absolute;
+        padding: .5rem 2rem;
+        font-size:2rem;
+
+    }
+    
+    div.call{
+        right:50px;
+        bottom: 55px;
+    }
+    /*================*/
+   section.weather {
+       display: flex;
+       justify-content: space-evenly;
+       
+       text-align:left;
+       line-height:1.25;
+       
+       padding:0;
+   }
+   .weather h4{
+       margin:0;
+       align-self:center;
+       }
+    section.weather img#icon {
+        width:30px;
+        height:auto;
+    
+    }
+    
+/*====================*/
+section.testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size:1.25rem;
+    
+}
+
+section.testimonials img{
+    max-width: 95%;
+    grid-column: span 2;
+
+}
+div.test1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div.test2 {
+    display:flex;
+    flex-direction: row;
+}
+div.test2 div.text {
+    text-align: right;
+
+}
+div.test2 div.text p {
+    margin-right: .5rem;
+}
+div.test2 img {
+    margin-left:1rem;
+    max-width:80%;
+}
+
+/*==========contactForm====*/
+label.above input, label.sbs input {
+    padding: .25rem;
+}
+/*=======iframe=========*/
+.iframe iframe {
+    max-width:100%;
+}
+section.map {
+    display: flex;
+    flex-direction: row;
+    margin:1rem;
+}
+/*========trips===========*/
+.trips section div p {
+    margin-bottom:.5rem;
+    margin-top:.25rem;
+}

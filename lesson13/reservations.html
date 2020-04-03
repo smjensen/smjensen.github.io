@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salmon River Adventures reservations</title>
+        <meta name="description" content="Salmon River Adventures reservations">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                <img src= "images/logofinal1.png" alt="Salmon River Adventures logo">
+                
+            </div>
+            
+            <nav class="topNav">
+                <button onclick="menu()">&#9776;</button>
+                <ul id="topNav" class="hide">
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Adventures</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li class="active"><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <h1 class="headline">Choose Your Own Adventure</h1>
+                <section class="table">
+                    <h2>Currently Available River Trips</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Length</td>
+                            <td>Skill Level</td>
+                            <td>Cost</td>
+                            <td>Location</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 day</td>
+                            <td>Beginner</td>
+                            <td>$90</td>
+                            <td>North Fork</td>
+                        </tr>
+                        <tr>
+                            <td>1 day</td>
+                            <td>Beginner</td>
+                            <td>$100</td>
+                            <td>Riggins Hot Springs</td>
+                        </tr>
+                        <tr>
+                            <td>1 day</td>
+                            <td>Beginner</td>
+                            <td>$120</td>
+                            <td>Goldbug Hot Springs</td>
+                        </tr>
+                        <tr>
+                            <td>5 day</td>
+                            <td>Intermediate</td>
+                            <td>$1800</td>
+                            <td>River of No Return</td>
+                        </tr>
+                    </tbody>
+                    
+
+                </table>
+            </section>
+            <section class="resForm">
+                <h2>Request A Reservation</h2>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>
+                            Personal Info
+                        </legend>
+                        <label class="above">First name* <input type="text" name="firstName" pattern="[A-Za-z-'\s]{3,}" title="Min. 3 letters. No numbers." required></label>
+                        <label class="above">Last name* <input type="text" name="lastName" pattern="[A-Za-z-'\s]{1,}" title="Letters only. No numbers." required></label>
+                        <label class="above">Email* <input type="email" name="email" placeholder="x@email.com" required></label>
+                        <label class="above">Phone* <input type="tel" name="tel" placeholder="##########" pattern="[0-9]{10}" title="Numbers only, no =" required></label>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Trip</legend>
+                        <label class="sbs">North Fork <input type="radio" name="trip" value="northfork"></label>
+                        
+                            
+                        <label class="sbs">Riggins Hot Springs <input type="radio" name="trip" value="riggins"></label>
+                        
+                            
+
+                        <label class="sbs">Goldbug Hot Springs <input type="radio" name="trip" value="goldbug"></label>
+                        <label class="above">Date for 1 day
+                            <select name="startDate">
+                                <option value="" disabled selected>2020</option>
+                                <option value="June 25">June 25</option>
+                                <option value="June 26">June 26</option>
+                                <option value="June 27">June 27</option>
+                                <option value="July 2">July 2</option>
+                                <option value="July 9">July 91</option>
+                                <option value="July 10">July 10</option>
+                                <option value="July 11">July 11</option>
+                                <option value="July 16">July 16</option>
+                                <option value="July 17">July 17</option>
+                                <option value="July 18">July 18</option>
+                                <option value="July 23">July 23</option>
+                                <option value="July 24">July 24</option>
+                                <option value="July 25">July 25</option>
+                                <option value="July 30">July 30</option>
+                                <option value="July 31">July 31</option>
+                                <option value="Aug 7">Aug 7</option>
+                                <option value="Aug 8">Aug 8</option>
+                                <option value="Aug 14">Aug 14</option>
+                                <option value="Aug 15">Aug 15</option>
+                                <option value="Aug 20">Aug 20</option>
+                                <option value="Aug 21">Aug 21</option>
+                            </select>
+                        </label>
+                           
+                        <label class="sbs">River of No Return <input type="radio" name="trip" value="noreturn"></label>
+                        <label class="above">Start Date for 5 day
+                            <select name="startDate">
+                                <option value="" disabled selected>2020</option>
+                                <option value="June 24-27">June 24-27</option>
+                                <option value="July 8-11"> July 8-11</option>
+                                <option value="July 22-25">July 22-25</option>
+                                <option value="Aug 5-8">Aug 5-8</option>
+                                <option value="Aug 12-15">Aug 12-15</option>
+                            </select>
+                        
+
+                        </label>
+                        <label for="comments" class="comments">Comments </label>
+                        <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Request" class="submitBtn" name="submit">
+
+                </form>
+            </section>
+
+            </main>
+            <footer>
+                <img src="images/logo100.png" alt="Salmon River Adventures logo" width="20">
+                &copy; <span id="currentDate"></span> | Heather Stratton |<a href="resources.html"> Resources</a>
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter1.png" alt="twitter icon" ></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook1.png" alt="facebook icon"></a></li>
+                    <li><a href="https://aboutme.google.com/" target="_blank" rel="noopener"><img src="images/googleplus1.png" alt="googleplus icon"></a> </li>
+                    </ul>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script>WebFont.load({google: {families:['Covered By Your Grace', 'Oxygen']}});</script>
+            <script src="js/scripts.js"></script>
+
+
+        </body>
+        </html>
