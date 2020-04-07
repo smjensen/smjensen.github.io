@@ -1,22 +1,40 @@
-  
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <?php 
-  $title = 'Contact';
-  include 'modules/head.php'; ?> 
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salmon River Adventures home</title>
+        <meta name="description" content="Salmon River Adventures home">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="small.css">
+        <link rel="stylesheet" href="medium.css">
+        <link rel="stylesheet" href="large.css">
+        <link rel="stylesheet" href="normalize.css">
+        
+        <link rel="preconnect" href="https://openweathermap.org">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                <img src= "logo1.JPG" alt="">
+                
 
-  <header>
-    <?php include 'modules/header.php'; ?> 
-  </header>
-
-  <nav>    
-  <?php 
-      $page = 'contact';
-      include 'modules/nav.php'; ?>       
-  </nav>
+            </div>
+            
+            <nav class="topNav">
+                <button onclick="menu()">&#9776;</button>
+                <ul id="topNav" class="hide">
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Adventures</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
     
 <main>
     <h1>Contact</h1>
