@@ -1,74 +1,125 @@
-/*#19B360; #17FF82; #FF6709; #195EB3; #177FFF;*/
+
 
 body {
+
     background-color:rgb(250, 255, 173);
     
     margin:0 auto;
+
     font-family: $bodyFont;
+
 }
+
 h1, h2, h3 {
+
     font-family: 'Covered By Your Grace', cursive;
+
     letter-spacing:1px 
+
 }
+
 h1.title {
+
     background-color: rgb(250, 255, 173);
+
     color: $ltGreen;
+
     text-shadow: 2px 2px black;
+
     border-bottom: 2px solid $orange;
+
     border-top: 4px solid $ltBlue;
     
     
 }
+
 h1, h2 {
+
     text-align:center;
+
 }
 
 h1 {
+
     background-color: rgb(250, 255, 173);
+
     color:$ltGreen;
+
     text-shadow: 2px 2px yellow;
+
     
 }
+
 h4 {
+
     background-color: rgb(211, 176, 22);
+
     color:black;
+
 }
+
 h3 {
+
     margin: 1rem;
+
 }
+
 .headline {
+
     text-align:center;
+
     margin:1rem 4rem;
 
 }
+
 h2 a {
+
     color: $dkBlue;
+
     text-decoration:none;
 
 }
+
 h2 a:hover {
+
     background: $ltGreen;
+
     color: $dkBlue;
+
 
 }
 main {
+
     background-color:white;
+
     padding: .5rem;
+
     color: $dkBlue;
+
     border:4px double $ltBlue;
+
     line-height:1.25;
+
     max-width:1020px;
+
     margin:0 auto;
     
     
     
 }
+
 header {
+
     display: flex;
+
     flex-direction: column;
+
     background-color: $dkBlue;
+
     border: 4px solid  $ltBlue;
+
     text-align: center;
+
     align-items:center;
       
 
@@ -76,21 +127,32 @@ header {
 
 
 
-/*=========nav======*/
+/*=============================================THIS IS FOR NAVIGATION==============================================*/
 
 nav.topNav {
+
     display: flex;
+
     flex-direction: column;
+
     font-weight: bold;
+
     font-size:1.25rem;
-    letter-spacing:2px;    
+
+    letter-spacing:2px;  
+
     margin:0 ;
+
     color: $ltGreen;
+
     background-color: $dkBlue;
+
     align-self:flex-start;
+
     justify-self: flex-start;
     
     width:100%;
+
     border-top: 2px solid $orange;
     
     
@@ -99,10 +161,15 @@ nav.topNav {
 
 
 nav.topNav ul{
+
     list-style-type: none;
+
     margin:0;
+
     padding:0;
+
     text-align:left;
+
     display:block;
     
       
@@ -111,339 +178,574 @@ nav.topNav ul{
    }
 
 nav.topNav ul li.active a{
+
     background: $ltGreen;
+
     color: $dkBlue;
 
 }
 nav.topNav ul li {
+
     display: block;
+
     border-bottom: 1px solid $ltBlue;
     
 
 }
+
 nav.topNav ul li a {
+
     padding: .5rem;
+
     display: block;
+
     color: $ltGreen;
+
     background-color: $dkBlue;
+
     text-decoration: none;
     
 
 }
 
 nav.topNav ul li a:hover {
+
     background: $ltGreen;
+
     color: $dkBlue;
     
 
 }
+
 nav.topNav button {
+
     border: none;
+
     background-color: $dkBlue;
+
     color: $ltGreen;
+
     margin:.25rem .25rem;
+
     text-align: left;
+
     padding:0;
+
     font-size:1.5rem;
     
 }
+
 nav.topNav button:focus{
+
     outline:none;
     
 }
+
 nav.topNav button:hover {
+
     font-size:1.5rem;
 
 }
+
 nav.topNav ul.hide {
+
     display: none;
+
 }
 
-/*=============footer=================*/
+/*===============================================THIS IS FOR THE FOOTER SECTIONS==========================================*/
+
 footer {
+
     background-color: $dkBlue;
+
     border: 4px solid  $ltBlue;
+
     color: $ltGreen;
+
     margin: auto;
+
     text-align:center;
+
     max-width:1020px;
+
     padding: .5rem;
 
 }
+
 footer a {
+
     color:  $ltGreen;
+
     text-decoration:none;
    
 
 }
+
 footer a:hover {
+
     background-color: $ltGreen;
+
     color: $dkBlue;
+
     font-weight: bold;
 
 }
+
 footer ul {
+
     list-style-type:none;
+
     display:flex;
+
     flex-direction:row;
+
     justify-content:center;
 
 }
+
 footer ul a:hover{
+
     background-color: transparent;
 
 }
-/*===========plan button===========*/
+/*============================================SECTION FOR BUTTONS========================================================*/
+
 div.call {
+
     padding: .5rem 6rem;
+
     margin: .5rem auto;
+
     color:  $ltGreen;
+
     background-color: $dkBlue;
+
     border-radius: 20px;
+
     border: 2px solid $orange;
+
     font-size:2rem;
+
     margin-bottom: 1rem;
+
     text-align:center;
     
   
    
 
 }
+
 div.call:hover {
+
    border:4px solid $ltBlue;
+
 }
+
 div.call a{
+
     color:  $ltGreen;
+
     text-decoration:none;
 
 }
-/*=========hero================*/
+
+/*========================================================HERO SECTIONS================================================*/
+
 picture.heroimage img{
+
     max-width:100%;
+
     height: auto;
+
     margin:0 auto;
+
     box-shadow: 5px 5px 10px grey;
     
    
 }
-/*=========weather==============*/
+/*=======================================================================WEATHER SECTIONS================================*/
+
 section.weather {
+
     border:4px solid  $ltGreen;
+
     background-color:$dkGreen;
+
     margin: auto;
+
     margin-top: 1rem;
+
     padding: .5rem;
+
     text-align: center;
+
     line-height: .75;
     
 
 }
 
 
-/*=========testimonials=============*/
+/*=============================================================WRITING SECTIONS=======================================*/
 
 section.testimonials img {
+
     margin:.5rem auto;
+
     box-shadow: 5px 5px 10px grey;
+
     max-width:100%;
 
 }
+
 section.testimonials p{
+
     margin-left:1rem;
+
 }
+
 section.testimonials {
+
     font-size:1.5rem;
+
 }
+
 div.test2 {
+
     display: flex;
+
     flex-direction: column-reverse;
+
 }
-/*============guides===========*/
+/*=====================================================================RIVER GUIDES SECTION===========================*/
+
 .profiles {
+
     display: flex;
+
     flex-direction: column;
+
 }
+
 .profiles img {
+
     border-radius:50px;
     
     border: 3px solid  $orange;
+
     margin: 2rem auto 0 auto;
+
     display:block;
+
     padding:.75rem;
     
 }
+
 .profiles h3 {
+
     text-align: center;
+
 }
+
 .profiles div {
+
     width:300px;
+
     border:2px solid $dkGreen;
+
     border-radius:50px;
+
     margin:.25rem auto 0 auto;
+
     padding:.75rem;
+
     line-height:1.5;
+
 }
+
 h2.headline {
+
     text-align:center;
+
 }
+
 .profiles h4 {
+
     border-radius: 15px;
+
     padding:3px;
+
 }
-/*=========contactForm===*/
+
+/*=================================================THE SECTION: CONTACT US========================================*/
 
 .resForm h2{
+
     text-align:center;
 
 }
+
 form {
     
     text-align: left;
+
     display:block;
+
     padding: .25rem;
+
     font-size:1.25rem;
 
 }
+
 form legend {
+
     color: $dkBlue;
+
     font-weight:bold;
+
     padding:.5rem;
     
 
 
 }
+
  fieldset {
+
     border: 2px solid $dkGreen;
+
     border-radius:50px;
+
     padding:1rem;
+
     background-color:white;
+
 }
+
 label.above {
+
     display:block;
+
     padding:.5rem 0;
     
 }
+
 label.above input, label.sbs input {
+
     padding: .5rem;
+
 }
+
 label.sbs {
+
     display:block;
+
     padding:.5rem;
+
 }
+
 textarea {
+
     display:block;
+
     padding:.5rem;
+
     border-radius:50px;
+
     border: 2px solid  $dkGreen;
+
 }
+
  input.submitBtn {
+
     margin-left: 2rem;
+
     margin-top: 1rem;
+
     border-radius:50px;
+
     padding: .5rem 6rem; 
+
     color:  $ltGreen;
+
     background-color: $dkBlue;
+
     border: 2px solid $orange;
+
     font-size:2rem;
 
 }
+
 input.submitBtn:hover {
+
     border:4px solid $ltBlue;
 
 
 }
+
 form label.above input {
+
     border: 1px solid $dkBlue;
+
     color: $dkBlue;
+
 }
+
 form label.above select {
+
     border: 1px solid $dkBlue;
+
     color: $dkBlue;
+
 }
-/*===============*/
+
+/*==================================================================FOR THE ADDRESS BOX=================================*/
+
 .iframe iframe{
+
     border:4px solid $dkBlue;
+
     padding:1rem;
+
     max-width:280px;
+
     box-shadow: 0 0 10px  $dkBlue;
+
     margin-left:1rem;
     
 }
+
 .address {
+
     margin: 1rem;
-}
-.address a {
-    color: $dkBlue;
-    text-decoration:none;
-}
-.address a:hover {
-    background-color: $ltGreen;
-    font-weight:bold;
+
 }
 
-/*=========resources=====*/
-.credits {
-    border:1px solid $dkBlue;
-    padding: 2rem;
-    border-radius: 50px;
-    margin:1rem 2rem;
-    text-align:center;
+.address a {
+
+    color: $dkBlue;
+
+    text-decoration:none;
+
 }
+
+.address a:hover {
+
+    background-color: $ltGreen;
+
+    font-weight:bold;
+
+}
+
+/*===================================================================LINK FOR RESOURCES=================================*/
+
+.credits {
+
+    border:1px solid $dkBlue;
+
+    padding: 2rem;
+
+    border-radius: 50px;
+
+    margin:1rem 2rem;
+
+    text-align:center;
+
+}
+
 .credits a {
     
     color: $dkBlue;
+
     text-decoration:none;
+
 }
+
 .credits a:hover {
+
     background-color: $ltGreen;
+
     font-weight:bold;
 
 }
-/*========trips=============*/
+
+/*=====================================================TRIP ADVISOR===============================================*/
+
 .trips  {
+
     display: flex;
+
     flex-direction:column;
+
 }
 
 .trips section {
+
     display: flex;
+
     flex-direction: column;
+
     margin: 1rem;
+
     border-radius:50px;
+
     border: 2px solid  $orange;
+
     padding: .5rem;
 
 }
+
 .trips section img {
+
     border-radius:50px;
+
     box-shadow: 5px 5px 10px grey;
+
     max-width:100%;
+
     margin:0 auto;
     
 
 }
+
 .trips h3 {
+
     text-align: center;
+
 }
-/*============table==*/
+
+/*=========================================================ALL LINKS FOR TABLES======================================*/
+
 table {
+
     border:4px double $orange;
+
     margin: auto;
+
     background-color: white;
+
     font-weight:bold;
     
 
 }
 
 thead {
+
     background-color: $orange;
+
     color: white;
+
 }
+
 td {
+
     border:1px solid orange;
+
     padding: .25rem ;
 
 }
+
 tbody {
+
     background-color: white;
+    
 }
