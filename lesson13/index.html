@@ -1,103 +1,91 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <title>Salmon River Adventures home</title>
-    <meta name="description" content="Salmon River Adventures home">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="small.css">
-    <link rel="stylesheet" href="medium.css">
-    <link rel="stylesheet" href="large.css">
-    <link rel="stylesheet" href="normalize.css">
-    
-    <link rel="preconnect" href="https://openweathermap.org">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    
-</head>
-<body>
-
-  <header>
-    
-  </header>
-
-  <nav class="topNav">
-    <button onclick="menu()">&#9776;</button>
-    <ul id="topNav" class="hide">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salmon River Adventures home</title>
+        <meta name="description" content="Salmon River Adventures home">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="small.css">
+        <link rel="stylesheet" href="medium.css">
+        <link rel="stylesheet" href="large.css">
+        <link rel="stylesheet" href="normalize.css">
         
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="trips.html">Adventures</a></li>
-        <li><a href="guides.html">Guides</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <link rel="preconnect" href="https://openweathermap.org">
+        <link rel="shortcut icon" href="images/favicon.ico">
         
-    </ul>
-</nav>
-<div id="slider">
-    <picture>
-    <source media="(min-width: 740px)" srcset="images/slider-paddle.jpg">
-    <source media="(min-width: 450px)" srcset="images/slider-paddle-medium.jpg">
-    <source media="(min-width: 320px)" srcset="images/slider-paddle-small.jpg">
-    <img src="images/slider-paddle.jpg" class="slides" alt="Stand up Paddle" title="Stand up Paddle" >
-    </picture>    
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                <img src= "logo1.JPG" alt="">
+                
 
-    <picture>
-    <source media="(min-width: 740px)" srcset="images/slider-rafting.jpg">
-    <source media="(min-width: 450px)" srcset="images/slider-rafting-medium.jpg">
-    <source media="(min-width: 320px)" srcset="images/slider-rafting-small.jpg">
-    <img src="images/slider-rafting.jpg" class="slides" alt="Whitewater Rafting" title="Whitewater Rafting" >
-    </picture>    
+            </div>
+            
+            <nav class="topNav">
+                <button onclick="menu()">&#9776;</button>
+                <ul id="topNav" class="hide">
+                    
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="trips.html">Adventures</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <section class="hero">
+                    <picture class="heroimage">
+                        <source media="(max-width: 600px)" srcset=".jpg">
+                            <source media="(max-width: 900px)" srcset=".jpg">
+                                <img src="whitewatercover.jpg" alt="excited rafters">
+                            </picture>
+                
+                <div class="call"><a href="reservations.html">Make A Plan</a></div>
+                <section class="weather">
+                    <h4>Riggins, ID </h4>
+                    <h4><span id="high"></span>&deg; </h4>
+                    
+                    <h4 id="current"> </h4>
+                    <img src="logo1.JPG" id="icon" alt="">
+            
+                    <h4>Humidity: <span id="humidity"></span>%</h4>
+                </section>
+            </section>
+            <section class="peoplestories">
+                <div class="test1">
+                <img src= "storyphoto1.jpg" alt="" width="700">
+                <div class="text">
+                <h3>Place first story here</p>
+            </div></div>
+            <div class="test2">
+                <div class="text">
+                    <h3>Place second story here</h3>
+                
+                </div>
+                <img src= "storyphoto2.jpg" alt="" width="700">
+                
+        </div>
+                
 
-    <picture>
-    <source media="(min-width: 740px)" srcset="images/slider-kayaking.jpg">
-    <source media="(min-width: 450px)" srcset="images/slider-kayaking-medium.jpg">
-    <source media="(min-width: 320px)" srcset="images/slider-kayaking-small.jpg">
-    <img src="images/slider-kayaking.jpg" class="slides" alt="Kayaking" title="Kayaking" >
-    </picture>    
+            </section>
+            
+            </main>
+            <footer>
+                <img src="logo1.JPG" alt="" width="20">
+                &copy; <span id="currentDate"></span> | Stewart Jensen |<a href="resources.html"> Resources</a>
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener"><img src="images/twitter1.png" alt="twitter icon"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="images/facebook1.png" alt="facebook icon"></a></li>
+                    <li><a href="https://aboutme.google.com/" target="_blank" rel="noopener"><img src="images/googleplus1.png" alt="googleplus icon"></a> </li>
+                    </ul>
+            </footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script>WebFont.load({google: {families:['Covered By Your Grace', 'Oxygen']}});</script>
+            <script src="js/scripts.js"></script>
+            <script src="js/weather.js"></script>
 
-</div>
-
-<main>
-<div class="maininfo">
-<h2>Your next Adventure is Here!</h2>
-<p style="line-height:25px;font-size:17px;">We are located in Riggins, Idaho and we offer world-class whitewater rafting, kayaking and stand up paddle experiences on the Salmon River in the middle of an Idaho wilderness. We use the best equipament that exist out there that complies with all U.S. Forest Service regulations.
-</p>
-
-<div class="adventures">
-    <div>
-        <h3>Kayaking</h3>
-        <img src="images/kayak.png" alt="Kayaking" title="Kayaking" >
-        <p>A kayak is a low-to-the-water, canoe-like boat in which the paddler sits facing forward, legs in front, using a double-bladed paddle to pull front-to-back on one side and then the other in rotation. It is distinguished from canoeing by the sitting position...</p>
-
-        <a href="kayaking.php">Read More</a>
-        <br>
-    </div> 
-
-    <div>
-        <h3>Water Rafting</h3>
-        <img src="images/rafting_icon.png" alt="Whitewater Rafting" title="Whitewater Rafting" >
-        <p>Rafting and white water rafting are recreational outdoor activities which use an inflatable raft to navigate a river or other body of water. This is often done on whitewater or different degrees of rough water...</p>
-
-        <a href="water-rafting.php">Read More</a>
-        <br>
-    </div> 
-    
-    <div>
-        <h3>Stand Up Paddle</h3>
-        <img src="images/stand-up.png" alt="Stand up Paddle" title="Stand up Paddle">
-        <p>This an offshoot of surfing that originated in Hawaii. Unlike traditional surfing where the rider sits until a wave comes, stand up paddle boarders stand on their boards and use a paddle to propel themselves through the water...</p>
-        <a href="standup-paddle.php">Read More</a>
-        <br>
-    </div>         
-</div>
-    
-</div>
-</main>
-    
-  <footer>
-      <?php include 'modules/footer.php'; ?> 
-  </footer>
-
-  <script src="scripts/hamburger.js"></script>
-<script src="scripts/slider.js"></script>
-</body>
-</html>
+        </body>
+        </html>
