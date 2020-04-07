@@ -429,7 +429,7 @@ form label.above select {
 table {
     border:4px double $orange;
     margin: auto;
-    background-color:black;
+    background-color: white;
     font-weight:bold;
     
 
@@ -437,10 +437,10 @@ table {
 
 thead {
     background-color: $orange;
-    color: black;
+    color: white;
 }
 td {
-    border:1px solid black;
+    border:1px solid orange;
     padding: .25rem ;
 
 }
