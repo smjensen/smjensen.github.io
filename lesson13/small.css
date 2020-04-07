@@ -1,7 +1,7 @@
 /*#19B360; #17FF82; #FF6709; #195EB3; #177FFF;*/
 
 body {
-    background-color:black;
+    background-color:rgb(250, 255, 173);
     
     margin:0 auto;
     font-family: $bodyFont;
@@ -11,7 +11,7 @@ h1, h2, h3 {
     letter-spacing:1px 
 }
 h1.title {
-    background-color: $dkBlue;
+    background-color: rgb(250, 255, 173);
     color: $ltGreen;
     text-shadow: 2px 2px black;
     border-bottom: 2px solid $orange;
@@ -24,13 +24,13 @@ h1, h2 {
 }
 
 h1 {
-    background-color: $dkBlue;
+    background-color: rgb(250, 255, 173);
     color:$ltGreen;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px yellow;
     
 }
 h4 {
-    background-color: $dkGreen;
+    background-color: rgb(211, 176, 22);
     color:black;
 }
 h3 {
