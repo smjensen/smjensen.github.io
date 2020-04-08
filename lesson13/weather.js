@@ -1,18 +1,19 @@
-/*---------------------weather-----*/
-//const apiURL="https://api.openweathermap.org/data/2.5/forecast?id=4092267&units=imperial&APPID=e7e99f72ef4dc80d87dfcaa6b6420751";
-const apiURL="https://api.openweathermap.org/data/2.5/forecast?lat=45.4200821&lon=-116.3296497&units=imperial&APPID=e7e99f72ef4dc80d87dfcaa6b6420751";
-//const apiURL="https://api.openweathermap.org/data/2.5/forecast?zip=83549,us&units=imperial&APPID=e7e99f72ef4dc80d87dfcaa6b6420751";
-fetch(apiURL)
-.then((response) => response.json())
-.then((jsObject)=>{
-    //console.log(jsObject);
-    const imgsource = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
-    const descrip = jsObject.list[0].weather[0].description;
-    document.getElementById('current').textContent=jsObject.list[0].weather[0].main;
-    document.getElementById('icon').setAttribute('src', imgsource);
-    document.getElementById('icon').setAttribute('alt', descrip);
-    document.getElementById('high').textContent = jsObject.list[0].main.temp_max.toFixed(0);
-    document.getElementById('humidity').textContent = jsObject.list[0].main.humidity.toFixed(0);
+var weather=new XMLHttpRequest();
 
+weather.open('get', 'http://api.wunderground.com/api/e9496079f263a55e/conditions/q/ID/Riggins.json', true);
+
+weather.send();
+
+weather.onload=function(){
+    
+    var info=JSON.parse (weather.responseText);
+    console.log(info);
+    
+    document.getElementById('place').innerHTML=info.current_observation.display_location.full;
+    document.getElementById('tempf').innerHTML=info.current_observation.temp_f;
+    document.getElementById('tempc').innerHTML=info.current_observation.temp_c;
+    document.getElementById('feelf').innerHTML=info.current_observation.feelslike_f;
+    document.getElementById('feelc').innerHTML=info.current_observation.feelslike_c;
+    document.getElementById('w_icon').src=info.current_observation.icon_url;
+    
 }
-)
