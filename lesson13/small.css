@@ -309,32 +309,12 @@ footer ul a:hover{
     background-color: transparent;
 
 }
-/*============================================SECTION FOR BUTTONS========================================================*/
 
-div.call {
-
-    padding: .5rem 6rem;
-
-    margin: .5rem auto;
-
-    color:  $ltGreen;
-
-    background-color: $dkBlue;
-
-    border-radius: 20px;
-
-    border: 2px solid $orange;
-
-    font-size:2rem;
-
-    margin-bottom: 1rem;
-
-    text-align:center;
     
   
    
 
-}
+
 
 div.call:hover {
 
@@ -747,5 +727,5 @@ td {
 tbody {
 
     background-color: white;
-    
+
 }
